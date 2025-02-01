@@ -1,0 +1,625 @@
+<!doctype html>
+<!--suppress JSUnresolvedReference -->
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta-Information for SEO and Social Sharing -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Unit 7: Inferential Statistics and Hypothesis Testing - E-Portfolio</title>
+  <meta
+    content="Detailed view of Unit 7: Inferential Statistics and Hypothesis Testing."
+    name="description">
+
+  <!-- Open Graph meta-tags for Social Media Sharing -->
+  <meta content="Unit 7: Inferential Statistics and Hypothesis Testing" property="og:title">
+  <meta content="website" property="og:type">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit7.html"
+    property="og:url">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit7-image.jpg"
+    property="og:image">
+  <meta content="Unit 7: Inferential Statistics and Hypothesis Testing" property="og:image:alt">
+
+  <!-- External CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon and Icons -->
+  <link href="/favicon.ico" rel="icon" sizes="any">
+  <link href="/icon.svg" rel="icon" type="image/svg+xml">
+  <link href="icon.png" rel="apple-touch-icon">
+
+  <!-- Web App Manifest -->
+  <link href="site.webmanifest" rel="manifest">
+  <meta content="#fafafa" name="theme-color">
+
+  <!-- Inline CSS for layout -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Navigation Buttons */
+    .unit-navigation {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .unit-navigation a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-nav {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      display: block;
+      text-align: center;
+    }
+
+    .btn-nav:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+
+    .unit-navigation .btn-nav {
+      flex: 1; /* Ensure both buttons take up equal space */
+    }
+
+    .unit-navigation {
+      margin: 20px 0; /* Space around navigation buttons */
+    }
+
+    .me-2 {
+      margin-right: 0.5rem; /* Right margin for Previous Unit button */
+    }
+
+    .ms-2 {
+      margin-left: 0.5rem; /* Left margin for Next Unit button */
+    }
+
+    /* Updated Header Styles */
+    header {
+      background-color: transparent; /* No background */
+      padding: 1rem 0; /* Smaller padding */
+    }
+
+    header.unit-header {
+      max-width: 100%; /* Align with the content's width */
+      margin: 0 auto;
+    }
+
+
+    .unit-header h1 {
+      font-size: 2rem; /* Smaller title */
+    }
+
+    .unit-header p {
+      font-size: 1rem; /* Smaller subtitle */
+    }
+
+    /* Added gap between embedded PDFs and removed borders */
+    .pdf-object {
+      margin-bottom: 20px; /* Creates a gap between the PDFs */
+      border: none; /* Removes the border around embedded PDFs */
+      width: 100%; /* Ensures PDF takes the full width of the container */
+      height: 800px; /* Set fixed height for the PDFs */
+    }
+
+    /* Removes border from the card */
+    .card {
+      border: none;
+    }
+
+    /* Make the content section the same width as the title */
+    .unit-content {
+      max-width: 100%; /* Full width */
+    }
+
+    /* Preloader Styles */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #preloader .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #007bff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Research Methods and Professional Practice E-Portfolio</a>
+    <button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+            type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <!-- Dropdown for Units -->
+        <li class="nav-item dropdown">
+          <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+             id="unitsDropdown"
+             role="button">
+            Units
+          </a>
+          <ul aria-labelledby="unitsDropdown" class="dropdown-menu">
+            <li><a class="dropdown-item" href="unit1.html">Unit 1</a></li>
+            <li><a class="dropdown-item" href="unit2.html">Unit 2</a></li>
+            <li><a class="dropdown-item" href="unit3.html">Unit 3</a></li>
+            <li><a class="dropdown-item" href="unit4.html">Unit 4</a></li>
+            <li><a class="dropdown-item" href="unit5.html">Unit 5</a></li>
+            <li><a class="dropdown-item" href="unit6.html">Unit 6</a></li>
+            <li><a class="dropdown-item" href="unit7.html">Unit 7</a></li>
+            <li><a class="dropdown-item" href="unit8.html">Unit 8</a></li>
+            <li><a class="dropdown-item" href="unit9.html">Unit 9</a></li>
+            <li><a class="dropdown-item" href="unit10.html">Unit 10</a></li>
+            <li><a class="dropdown-item" href="unit11.html">Unit 11</a></li>
+            <li><a class="dropdown-item" href="unit12.html">Unit 12</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+
+  <!-- Unit Header -->
+  <header class="unit-header text-center">
+    <div class="container-fluid">
+      <!-- Main Title and Subtitle (Smaller Font) -->
+      <h1 aria-labelledby="unitTitle" class="display-4">Unit 7: Inferential Statistics and Hypothesis Testing</h1>
+    </div>
+  </header>
+
+  <!-- Unit Navigation -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div class="unit-navigation d-flex justify-content-between">
+          <a class="btn-nav w-100 me-2" href="unit6.html">← Previous Unit</a>
+          <a class="btn-nav w-100 ms-2" href="unit8.html">Next Unit →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Unit Content -->
+  <section class="unit-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <!-- Unit Overview -->
+          <h3>Unit Overview</h3>
+          <p>In Unit 7, we explored inferential statistics and hypothesis testing to understand how to draw meaningful
+            conclusions about populations from sample data using probability and statistical methods.</p>
+
+          <!-- Learning Objectives -->
+          <h4>Learning Objectives</h4>
+          <ul>
+            <li>Understand the principles of inferential statistics and their applications in data analysis</li>
+            <li>Identify and apply appropriate probability distributions for statistical inference</li>
+            <li>Conduct hypothesis testing to evaluate assumptions and compare population values effectively</li>
+          </ul>
+
+          <!-- Assignment Section -->
+          <h4>Assignment</h4>
+          <div class="card mb-3">
+            <object aria-describedby="Literature Review"
+                    class="pdf-object"
+                    data="assets/Literature%20Review%20Assignment.pdf"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the literature review assignment"
+                href="assets/Literature%20Review%20Assignment.pdf"
+                target="_blank">download the PDF</a>.</p>
+            </object>
+            <h4 id="LiteratureReviewFeedback">Assignment Feedback</h4>
+            <img alt="Assignment 1 Grade" src="assets/Assignment%201%20Grade.png" style="width: 100%;height: 100%;">
+            <object aria-describedby="Literature Review"
+                    class="pdf-object"
+                    data="assets/Assignment%201%20Feedback.pdf"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the literature review feedback"
+                href="assets/Assignment%201%20Feedback.pdf"
+                target="_blank">download the PDF</a>.</p>
+            </object>
+
+          </div>
+
+          <!-- Artefacts Section -->
+          <h4>Artefacts</h4>
+
+          <div class="card mb-3">
+            <h5 id="InappropriateUseOfSurveysActivity">Collaborative Discussion Two - Initial Post</h5>
+            <p><strong><u>Introduction</u></strong></p>
+            <p>In the case study, Abi was responsible for analysing the nutritional values of a new cereal named Whizzz.
+              Whilst reviewing the collected data, Abi encounters an ethical dilemma as whilst their finding suggests
+              Whizzz is less nutritious than claimed and may even be harmful, there are statistical approaches; they
+              could employ to highlight correlations that portray the product in a more favourable light. This scenario
+              raises questions about the ethical use of data, the responsibilities of researchers and the potential
+              consequences of their decisions. In this post, I aim to explore these issues from ethical, legal, social
+              and professional perspectives while providing recommendations for Abi.</p>
+            <p><strong><u>Ethical Considerations</u></strong></p>
+            <p>Maintaining integrity in research is of the utmost importance as ethical standards demand honesty and
+              transparency. Manipulating or selectively reporting data to support a specific outcome even if it is
+              technically accurate, is unethical. Doing so could distort the truth, mislead stakeholders or undermine
+              public trust in scientific research. This idea is reinforced by the British Psychological Society&rsquo;s
+              Code of Human Research Ethics which states &ldquo;researchers are obligated to ensure their work does not
+              mislead or harm&rdquo; (British Psychological Society, 2014).</p>
+            <p>Abi must consider whether they have a moral obligation to present both the positive and negative aspects
+              of their findings. Selectively using statistics to highlight one particular outcome may be perceived as
+              &ldquo;cherry-picking&rdquo; which compromises the credibility of the data and leads to a distorted
+              representation of reality (Benos et al., 2007). Ethical research requires a balanced presentation of
+              results to ensure objectivity and transparency.</p>
+            <p><strong><u>Legal and Professional Responsibility</u></strong></p>
+            <p>There are plenty of legal and professional considerations that Abi must consider. For example, in the
+              United Kingdom, misleading claims about products are subject to legal scrutiny due to the Unfair Trading
+              Regulations (UK Government, 2008) which prohibits deceptive advertising practices that could harm
+              consumers. As a result of this, if the manufacturer uses Abi&rsquo;s findings selectively to promote
+              Whizzz as nutritious while disregarding evidence to the contrary, Abi may be found complicit in the eyes
+              of the law.</p>
+            <p>Abi must adhere to codes of conduct established within their field, which prioritise responsibility,
+              accuracy, and the prevention of harm. Allowing the misuse of their analyses could damage Abi&rsquo;s
+              reputation, the institution's creditability, and the broader scientific community. Therefore, Abi has a
+              responsibility to ensure their work is used ethically and responsibly by the manufacturer.</p>
+            <p><strong><u>Social and Professional Impact</u></strong></p>
+            <p>Abi&rsquo;s decisions carry significant social implications concerning public health and trust in
+              research. Misrepresenting the nutritional value of Whizzz could mislead consumers into making dietary
+              choices that harm their health and has the potential to damage public confidence in the scientific process
+              and negatively impact the credibility of researchers and institutions. Research has shown that the spread
+              of biased or misleading research findings erodes trust in scientific research, hindering its ability to
+              effectively serve society (Loannidis, 2005).</p>
+            <p>Abi is accountable for the outcomes of their work even if they are not directly responsible for how the
+              manufacturer uses their findings, they have a duty to advocate for their ethical application of their
+              results. By adopting a proactive approach, Abi can help to mitigate the risks associated with the misuse
+              of
+              their analyses.</p>
+            <p><strong><u>Recommendations</u></strong></p>
+            <p>To tackle the social, ethical and legal challenges present in the case study Abi should take several
+              steps. Firstly, they must present both the positive and negative findings from their analyses to ensure
+              transparency, objectivity and honesty. Secondly, Abi should communicate to the manufacturer the potential
+              ethical and legal risks associated with selective reporting. Thirdly, Abi should consider publishing their
+              findings in a peer-reviewed journal to ensure accountability and transparency. Lastly, Abi should include
+              any disclaimers or contractual agreements to help prevent the misuse of their analyses.</p>
+            <p><strong><u>Conclusion</u></strong></p>
+            <p>Abi&rsquo;s situation highlights the connection between ethical responsibility, legal accountability, and
+              societal impact in research. By maintaining transparency, advocating for the ethical use of data, and
+              considering the wider implications of their actions, Abi can fulfil their professional obligations while
+              protecting public trust and safety. Ultimately, a commitment to ethical principles will enhance Abi's
+              integrity as a researcher and contribute to the credibility and value of scientific inquiry.</p>
+            <p><strong><u>References</u></strong></p>
+            <p>Benos, D. J., et al. (2007) &lsquo;Ethics and scientific publication&rsquo;,&nbsp;<em>Advances in
+              Physiology Education</em>, 31(3), pp. 295&ndash;299. DOI: 10.1152/advan.00119.2006.</p>
+            <p>British Psychological Society. (2014) Code of Human Research Ethics. Leicester: BPS. Available from: <a
+              href="https://www.bps.org.uk/news-and-policy/bps-code-human-research-ethics">https://www.bps.org.uk/news-and-policy/bps-code-human-research-ethics</a>
+              [Accessed 12 December 2024].</p>
+            <p>Ioannidis, J. P. A. (2005) &lsquo;Why most published research findings are false&rsquo;,&nbsp;<em>PLoS
+              Medicine</em>, 2(8), pp. e124. DOI: 10.1371/journal.pmed.0020124.</p>
+            <p>UK Government. (2008) Consumer Protection from Unfair Trading Regulations. Available from: <a
+              href="https://www.legislation.gov.uk/uksi/2008/1277/contents/made">https://www.legislation.gov.uk/uksi/2008/1277/contents/made</a>
+              [Accessed 12 December 2024].</p>
+            <h5>Responses from peers</h5>
+            <h6>Response 1</h6>
+            <p>Hello Samuel,</p>
+            <p>Including disclaimers or contractual agreements is a strong approach to preventing the misuse of Abi's
+              analyses. While disclaimers provide clarity on the intended scope and limitations of the work, contractual
+              agreements take ethical safeguards further by legally binding all parties to specific responsibilities and
+              standards.</p>
+            <p>The idea of a contractual agreement is particularly compelling, as it helps establish clear obligations,
+              manage relationships, and promote ethical accountability between involved parties (Beck &amp; Purcell,
+              2023). Such agreements align with the principles of the ACM Code of Ethics and Professional Conduct and
+              the BCS Code of Conduct, which emphasise the importance of avoiding harm and acting in the public
+              interest.</p>
+            <p>For Abi, including ethical clauses in a contract could explicitly define acceptable uses of the analyses
+              and specify consequences for misuse. This approach not only deters potential harm but also reflects a
+              proactive commitment to transparency and trust. By integrating these measures, Abi would ensure their work
+              aligns with professional and societal values, strengthening accountability and reinforcing ethical
+              standards in their practice.</p>
+            <p><strong>References:</strong></p>
+            <p>Beck, D. and Purcell, R., 2023. Towards a community-based ethical contract. Community Development
+              Journal, 58(1), pp.79-95.</p>
+            <br>
+            <h6>Response 2</h6>
+            <p>Hello Samuel,<br><br> Thank you for your insightful comments and analysis. I appreciate how you&rsquo;ve
+              categorised the consequences of Abi&rsquo;s actions into ethical, legal, social, and professional
+              dimensions, making it easier to understand the situation's complexity. Additionally, your focus on
+              proactive solutions and recommendations demonstrates a clear commitment to addressing Abi's ethical
+              challenges.<br> Your suggestion to include disclaimers and contractual agreements is particularly
+              noteworthy. Furthermore, publishing in a peer-reviewed journal is another approach that piqued my
+              interest. These strategies could indeed serve as safeguards to prevent misuse of Abi&rsquo;s analysis.
+              However, I would like to expand on this idea.<br><br> For instance, a disclaimer could help protect
+              against reputation harm, clarifying that the findings should not be used selectively. A contractual
+              agreement gives Abi more control over the use of their findings by the manufacturer, ensuring that the
+              results are used responsibly and ethically.<br><br> On the other hand, publishing research in an
+              open-access format can enhance accessibility, aligning with the European Commission's Horizon 2020 Open
+              Access policy. Making the findings openly available provides transparency. However, this also means that
+              Abi would need to be cautious about how their work is interpreted or misused by others&nbsp;(European
+              Commission, N.D.).</p>
+            <p>These approaches, when combined, can provide both transparency and protection for Abi&rsquo;s work,
+              ensuring that their ethical and legal responsibilities are upheld.<br><br>Reference:<br><br>European
+              Commission
+              (n.d.) Open access. Available at: <a
+                href="https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science/open-access_en">https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science/open-access_en</a>
+              [Accessed: 21 December 2024].</p>
+            <h4>Summary Measures Worksheet</h4>
+            <h5>Example 6.1</h5>
+            <object aria-describedby="summaryMeasuresWorksheetExample6.1"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQQWkNAHClj0SIYHj19ClnMeAWfl_4QGvAZIuUHyXfYgt4A"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for Exercise 6.1"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQQWkNAHClj0SIYHj19ClnMeAWfl_4QGvAZIuUHyXfYgt4A"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h5>Example 6.2</h5>
+            <object aria-describedby="summaryMeasuresWorksheetExample6.2"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQT7Gkdx3154R5BhU4p3ChyoAb1oUD1by-__KImwACtf2to"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for Exercise 6.2"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQT7Gkdx3154R5BhU4p3ChyoAb1oUD1by-__KImwACtf2to"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h5>Example 6.3</h5>
+            <object aria-describedby="summaryMeasuresWorksheetExample6.3"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQQvW2N4ksQiSr6DkWct1y3rAbpgLpuLdOI1PTl_oxN-MLE"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for Exercise 6.3"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQQvW2N4ksQiSr6DkWct1y3rAbpgLpuLdOI1PTl_oxN-MLE"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h4>Hypothesis Testing Worksheet</h4>
+            <h5>Example 7.1</h5>
+            <object aria-describedby="hypothesisTestingWorksheetExample7.1"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQQECPHiO6YARqiQbG98zSukAe-35o-jqgsWvcP5ZuZXdiI"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for Exercise 7.1"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQQECPHiO6YARqiQbG98zSukAe-35o-jqgsWvcP5ZuZXdiI"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h3>The INDEPENDENT Samples T Test spreadsheet</h3>
+            <object aria-describedby="hypothesisTestingWorksheetIndependentSamplesTTest"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQRHzVZxCs2mTpEZXSRiAKtSAaTOtICMoHf_9y70mmb7aok"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for 7.6B"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQRHzVZxCs2mTpEZXSRiAKtSAaTOtICMoHf_9y70mmb7aok"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h5>Example 7.2</h5>
+            <p>Example 7.2 asked us to use a spreadsheet file that wasn't provided, so I was unable to complete the
+              exercise, so I provided a conceptual approach below.</p>
+            <p><strong>1. Hypotheses</strong></p>
+            <p>The goal is to test whether the population mean income for men exceeds that of women. This involves a
+              one-tailed, two-sample t-test.</p>
+            <ul>
+              <li><strong>Null Hypothesis (𝐾<sub>0</sub>):</strong> The mean income for men (μ<sub>M</sub>) is less
+                than or equal to the mean income for women (μ<sub>F</sub>)
+              </li>
+              <li><strong>Alternative Hypothesis (𝐾<sub>a</sub>):</strong> The mean income for men (μ<sub>M</sub>) is
+                greater than the mean income for women (μ<sub>F</sub>)
+              </li>
+            </ul>
+
+            <p><strong>2. Test Statistic</strong></p>
+            <p>The test statistic for a two-sample t-test is calculated as:</p>
+            <pre>
+            t = (X̄<sub>M</sub> - X̄<sub>F</sub>) / sqrt((s<sup>2</sup><sub>M</sub> / n<sub>M</sub>) + (s<sup>2</sup><sub>F</sub> / n<sub>F</sub>))
+            </pre>
+            <ul>
+              <li><strong>X̄<sub>M</sub>, X̄<sub>F</sub>:</strong> Mean income of males and females, respectively.</li>
+              <li><strong>s<sup>2</sup><sub>M</sub>, s<sup>2</sup><sub>F</sub>:</strong> Variances of male and female
+                income samples.
+              </li>
+              <li><strong>n<sub>M</sub>, n<sub>F</sub>:</strong> Sample sizes of males and females, respectively.</li>
+            </ul>
+
+            <p><strong>3. Assumptions for Validity</strong></p>
+            <p>The validity of the test relies on these assumptions:</p>
+            <ul>
+              <li><strong>Independence:</strong> Observations within and between the groups are independent.</li>
+              <li><strong>Normality:</strong> The income data for both groups is approximately normally distributed.
+              </li>
+              <li><strong>Homogeneity of Variance:</strong> The variance of income is similar for men and women.
+              </li>
+            </ul>
+
+            <p><strong>4. Steps for Validation</strong></p>
+            <ul>
+              <li><strong>Independence:</strong> Check the design of the data collection to ensure no dependency exists
+                between observations.
+              </li>
+              <li><strong>Normality:</strong> Use graphical methods or statistical tests to assess the distribution of
+                income.
+              </li>
+              <li><strong>Homogeneity of Variance:</strong> Use Levene's test or Bartlett's test to verify whether
+                variances are equal. If there are not, use a t-test assuming unequal variances.
+              </li>
+            </ul>
+
+            <p><strong>5. Interpretation</strong></p>
+            <p>If the calculated p-value is less than the significance level, reject the null hypothesis and conclude
+              that the population mean income for men is significantly higher than that for women. Otherwise, fail
+              to reject the null hypothesis.</p>
+
+            <p><strong>6. Reporting Findings</strong></p>
+            <ul>
+              <li>Report the test statistic (t) and p-value.</li>
+              <li>Include confidence intervals for the difference in means.</li>
+              <li>Discuss practical significance, if applicable.</li>
+            </ul>
+
+          </div>
+
+          <!-- Reflection Section -->
+          <h5 id="reflection">Reflection</h5>
+          <p><strong><u>Description</u></strong></p>
+          <p>This unit was the seventh unit of the Research Methods and Professional Practice module. This unit focused
+            on inferential statistics and hypothesis testing. The goals of this unit were to understand the principles
+            of inferential statistics and their applications in data analysis, to identify and apply appropriate
+            probability distributions for statistical inference and to learn how to conduct hypothesis testing to
+            evaluate assumptions and compare population values effectively.</p>
+          <p>In this unit, there was a collaborative discussion on the legal, social and ethical concerns Abi must
+            consider in the case study, the hypothesis testing worksheet, the summary measures worksheet and a lecture
+            cast on summary measures and Inference. We were also required to read chapter 4, 9 &amp; 10 from the book on
+            Basic Business Statistics (Berenson et al., 2019) and the article on inferential statistics (Purdue
+            University, 2023) and had to hand in the literature review assignment.</p>
+          <p><strong><u>Feelings</u></strong></p>
+          <p>I felt overwhelmed this week due to the number of tasks to complete alongside the literature review
+            assignment. Missing the lecture added to my stress, as I only realised after submission that my references
+            needed to be in alphabetical order, which was not a requirement in previous modules or stated in the
+            university's guidelines. This oversight made me feel frustrated and anxious about my grade. Additionally, I
+            found the grammatical errors in the lecture cast distracting, which affected my focus. Despite these
+            challenges, I appreciated the structure of the worksheets, as they helped clarify concepts, I initially
+            found confusing.</p>
+          <p><strong><u>Evaluation</u></strong></p>
+          <p>The unit provided valuable insights into inferential statistics, particularly through the hands-on
+            worksheets, which reinforced my understanding of hypothesis testing. The collaborative discussion on legal,
+            social, and ethical concerns broadened my perspective on real-world applications of research. However,
+            missing the lecture negatively impacted my ability to adhere to assignment requirements. The lack of clarity
+            in referencing expectations and the errors in the lecture cast content reduced the overall quality of the
+            learning experience.</p>
+          <p><strong><u>Analysis</u></strong></p>
+          <p>The challenges I faced this week highlighted the importance of attending lectures and reviewing recordings
+            promptly to avoid missing critical information. The university's inconsistency in referencing requirements
+            created confusion, demonstrating a need for clearer communication and standardised guidelines. Despite these
+            setbacks, the unit's emphasis on statistical inference was beneficial, as it provided a strong foundation
+            for future research tasks. The worksheets were particularly effective in translating theoretical concepts
+            into practical skills, such as identifying probability distributions and performing hypothesis tests.</p>
+          <p><strong><u>Conclusion</u></strong></p>
+          <p>Although I gained significant knowledge from this unit, missing the lecture and encountering
+            inconsistencies in referencing guidelines hindered my performance. Improved time management and better
+            communication from the university could have alleviated these issues. The practical components of the unit,
+            such as the worksheets and discussions, were highly valuable and enhanced my understanding of inferential
+            statistics.</p>
+          <p><strong><u>Action plan</u></strong></p>
+          <p>To improve my performance in the module going forward, I will ensure I attend all lectures or watch
+            recordings promptly to stay updated on assignment expectations and key concepts, use formative feedback from
+            discussions and worksheets to enhance my understanding and improve future assignments and allocate specific
+            time slots for completing readings and worksheets to ensure tasks are not rushed, even during busy
+            weeks.</p>
+          <p><strong><u>References</u></strong></p>
+          <p>Gibbs, G. (1998) Learning by Doing: A guide to teaching and learning methods. Further Education Unit.
+            Oxford Polytechnic: Oxford.</p>
+          <p>Berenson, L.,&nbsp;Levine, D.,&nbsp;&amp; Szabat, K.&nbsp;(2019)&nbsp;<em>Basic Business Statistics:
+            Concepts and Applications.</em>&nbsp;14th Ed.&nbsp;Pearson&nbsp;</p>
+          <p>Purdue University. (2023)&nbsp;<em>Basic Inferential Statistics: Theory and Application.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Unit Navigation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <div class="unit-navigation d-flex justify-content-between">
+        <a class="btn-nav w-100 me-2" href="unit6.html">← Previous Unit</a>
+        <a class="btn-nav w-100 ms-2" href="unit8.html">Next Unit →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Research Methods and Professional Practice E-Portfolio</p>
+</footer>
+
+<!-- External JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Preloader JavaScript -->
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  });
+</script>
+
+<!-- Initialize AOS (Animate on Scroll) for scroll-based animations -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Custom JavaScript (if any, for additional functionality) -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

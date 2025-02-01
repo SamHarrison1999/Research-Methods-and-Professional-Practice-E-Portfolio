@@ -1,0 +1,676 @@
+<!doctype html>
+<!--suppress JSUnresolvedReference -->
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta-Information for SEO and Social Sharing -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Unit 1: Introduction to Research Methods - E-Portfolio</title>
+  <meta
+    content="Detailed view of Unit 1: Introduction to Research Methods. Learn about scientific investigation and ethics in computing."
+    name="description">
+
+  <!-- Open Graph meta-tags for Social Media Sharing -->
+  <meta content="Unit 1: Introduction to Research Methods" property="og:title">
+  <meta content="website" property="og:type">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit1.html"
+    property="og:url">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit1-image.jpg"
+    property="og:image">
+  <meta content="Unit 1: Introduction to Research Methods" property="og:image:alt">
+
+  <!-- External CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon and Icons -->
+  <link href="/favicon.ico" rel="icon" sizes="any">
+  <link href="/icon.svg" rel="icon" type="image/svg+xml">
+  <link href="icon.png" rel="apple-touch-icon">
+
+  <!-- Web App Manifest -->
+  <link href="site.webmanifest" rel="manifest">
+  <meta content="#fafafa" name="theme-color">
+
+  <!-- Inline CSS for layout -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Navigation Buttons */
+    .unit-navigation {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .unit-navigation a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-nav {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      display: block;
+      text-align: center;
+    }
+
+    .btn-nav:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+
+    .unit-navigation .btn-nav {
+      flex: 1; /* Ensure both buttons take up equal space */
+    }
+
+    .unit-navigation {
+      margin: 20px 0; /* Space around navigation buttons */
+    }
+
+    .ms-2 {
+      margin-left: 0.5rem; /* Left margin for Next Unit button */
+    }
+
+    /* Updated Header Styles */
+    header {
+      background-color: transparent; /* No background */
+      padding: 1rem 0; /* Smaller padding */
+    }
+
+    header.unit-header {
+      max-width: 100%; /* Align with the content's width */
+      margin: 0 auto;
+    }
+
+
+    .unit-header h1 {
+      font-size: 2rem; /* Smaller title */
+    }
+
+    .unit-header p {
+      font-size: 1rem; /* Smaller subtitle */
+    }
+
+    /* Added gap between embedded PDFs and removed borders */
+    .pdf-object {
+      margin-bottom: 20px; /* Creates a gap between the PDFs */
+      border: none; /* Removes the border around embedded PDFs */
+      width: 100%; /* Ensures PDF takes the full width of the container */
+      height: 800px; /* Set fixed height for the PDFs */
+    }
+
+    /* Removes border from the card */
+    .card {
+      border: none;
+    }
+
+    /* Make the content section the same width as the title */
+    .unit-content {
+      max-width: 100%; /* Full width */
+    }
+
+    /* Preloader Styles */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #preloader .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #007bff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Research Methods and Professional Practice E-Portfolio</a>
+    <button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+            type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <!-- Dropdown for Units -->
+        <li class="nav-item dropdown">
+          <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+             id="unitsDropdown"
+             role="button">
+            Units
+          </a>
+          <ul aria-labelledby="unitsDropdown" class="dropdown-menu">
+            <li><a class="dropdown-item" href="unit1.html">Unit 1</a></li>
+            <li><a class="dropdown-item" href="unit2.html">Unit 2</a></li>
+            <li><a class="dropdown-item" href="unit3.html">Unit 3</a></li>
+            <li><a class="dropdown-item" href="unit4.html">Unit 4</a></li>
+            <li><a class="dropdown-item" href="unit5.html">Unit 5</a></li>
+            <li><a class="dropdown-item" href="unit6.html">Unit 6</a></li>
+            <li><a class="dropdown-item" href="unit7.html">Unit 7</a></li>
+            <li><a class="dropdown-item" href="unit8.html">Unit 8</a></li>
+            <li><a class="dropdown-item" href="unit9.html">Unit 9</a></li>
+            <li><a class="dropdown-item" href="unit10.html">Unit 10</a></li>
+            <li><a class="dropdown-item" href="unit11.html">Unit 11</a></li>
+            <li><a class="dropdown-item" href="unit12.html">Unit 12</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+
+  <!-- Unit 1 Header -->
+  <header class="unit-header text-center">
+    <div class="container">
+      <!-- Main Title and Subtitle -->
+      <h1 aria-labelledby="unitTitle" class="display-4">Unit 1: Introduction to Research Methods. The Scientific
+        Investigation and Ethics in Computing</h1>
+    </div>
+  </header>
+
+  <!-- Unit Navigation -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div class="unit-navigation d-flex justify-content-between">
+          <a class="btn-nav w-100 ms-2" href="unit2.html">Next Unit →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unit 1 Content -->
+  <section class="unit-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <!-- Unit Overview -->
+          <h3>Unit Overview</h3>
+          <p>In Unit 1, we were introduced to the core principles of Research Methods, the Scientific Method, and Ethics
+            in Computing.</p>
+
+          <!-- Learning Objectives -->
+          <h4>Learning Objectives</h4>
+          <ul>
+            <li>Understand the purpose and significance of research.</li>
+            <li>Differentiate between Deductive and Inductive reasoning.</li>
+            <li>Recognize the importance of ethics in research and professional practice.</li>
+            <li>Apply key principles of ethical research to your own work.</li>
+          </ul>
+
+          <!-- Artefacts Section -->
+          <h4>Artefacts</h4>
+          <p>This section includes the artefacts completed during this unit.</p>
+
+          <div class="card mb-3">
+            <!-- e-Portfolio Activity: Reflective Activity 1 – Ethics in Computing in the age of Generative AI -->
+            <h5 id="reflectiveActivity">Reflective Activity 1 – Ethics in Computing in the Age of Generative AI</h5>
+            <p><strong><u>Introduction</u></strong></p>
+            <p>I&rsquo;m going to start with some key definitions before reflecting on the ethical considerations
+              relevant to AI citing the paper on worldwide AI Ethics (Correa et al., 2023), the article on Ethics in AI
+              (Deckard, 2023) and my own independent research on AI Ethics. Then I&rsquo;ll discuss how different
+              countries across the world mitigate the legal, social and ethical concerns relevant to Generative AI.</p>
+            <p><strong><u>What is meant by ethics?</u></strong></p>
+            <p>The Oxford English dictionary defines ethics as a set of moral principles that govern a person's
+              behaviour
+              or the conduct of an activity (Oxford English Dictionary, 2014).</p>
+            <p><strong><u>What is meant by AI? </u></strong></p>
+            <p>IBM defines Artificial intelligence (AI) as the technology that enables computers and machines to
+              simulate
+              human learning, comprehension, problem-solving, decision-making, creativity and autonomy (IBM, 2024).</p>
+            <p><strong><u>What is meant by Generative AI?</u></strong></p>
+            <p>IBM defines Generative AI as deep-learning models that can generate high-quality text, images, and other
+              content based on the data they were trained on (IBM, 2023).</p>
+            <p><strong><u>Worldwide AI ethics: A review of 200 guidelines and recommendations for AI
+              governance</u></strong></p>
+            <p>In the paper Worldwide AI ethics: A review of 200 guidelines and recommendations for AI governance
+              (Correa et al., 2023) Nicholas Correa, Camila Galvao, James Santos and Carolina Carvalho performed an
+              n-gram analysis on 200 documents from 37 different countries in five different languages in an attempt to
+              form a global consensus on the guidelines and recommendations for AI governance. They critiqued the
+              research done on AI ethics to date, citing studies by Anna Jobin, Thilo Hagendorff and Jessica Fjeld and
+              proposed not to use popularity-based filtering of documents to gain a global view of AI ethics.</p>
+            <p>They categorised each of the 200 documents based on the content of the document, the type of regulation,
+              the normative strength of the regulation and the impact scope. Then they categorised the ethical
+              principles for AI into the following seventeen categories; accountability/liability,
+              beneficence/non-maleficence, children and adolescent rights, dignity/human rights,
+              diversity/inclusion/pluralism/accessibility, freedom/autonomy/democratic values/technological sovereignty,
+              human formation/education, human-centeredness/alignment, intellectual property,
+              justice/equity/non-discrimination, labour rights, cooperation/fair competition/open source, privacy,
+              reliability/safety/security/trustworthiness, sustainability, transparency/explainability/auditability and
+              truthfulness.</p>
+            <p>There were some severe limitations to their study, however, which put the validity of their results into
+              question as the study only focused on documents written in 5 different languages, it excluded academic
+              papers, South American, African and Oceania countries were significantly underrepresented, it excluded
+              any historical data and the data was not diverse enough to provide significant value as over half of the
+              data came from governmental institutions and private organisations, and the majority of data was normative
+              and focused on recommendations. Due to the majority of data being from Europe and America and the
+              exclusion criteria it's my opinion that the data wasn&rsquo;t complete enough to represent a worldwide
+              view on AI ethics.</p>
+            <p><strong><u>What are Ethics in AI</u></strong></p>
+            <p>The article written by Richard Deckard on behalf of the British Computer Society (BCS) outlines what it
+              means to become an AI ethicist and the steps you must take (Deckard, 2023).</p>
+            <p>Deckard defined AI ethics as the principles and values that guide the development and deployment of AI
+              technologies, ensuring that they&rsquo;re designed and used in a way that is fair, transparent, and
+              accountable.</p>
+            <p>Deckard proposed there are 7 key steps to becoming an AI ethicist; first you must build a strong
+              foundation is ethics and technology, then you must stay informed on AI developments, then you must
+              understand the context of AI ethics, then you must develop strong communication skills, then you must
+              collaborate with other disciplines, then you must participate in public policy discussions, then you must
+              develop practical solutions.</p>
+            <p>While I agree with the points raised by Deckard, I view the BCS article on Ethics in AI only as a good
+              starting point for understanding ethics in AI as it looks at the ethical considerations only at a high
+              level.</p>
+            <p><strong><u>Ethical challenges and Solutions of Generative AI: An Interdisciplinary
+              Perspective</u></strong></p>
+            <p>The paper on the Ethical challenges and of Generative AI by Mousa Al-Kfairy, Dheya Mustafa, Nir Kshetri,
+              Mazen Insiew and Omar Alfandi theorised the ethical challenges of AI are related to privacy, data
+              protection, copyright infringement, misinformation, biases and societal inequalities, deepfakes, synthetic
+              media, consent, human rights, transparency, fairness, openness, authenticity, accountability, identity
+              theft, environmental impact, over reliance on technology, discrimination, labour displacement, monopolies,
+              responsible usage and integrity.</p>
+            <p>One of the many examples they used was about academic integrity when a student uses AI to write an
+              assignment. Stating that it is unfair to the other students who actually did the work and that their
+              dependence on AI could result in a lower level of knowledge.</p>
+            <p>The areas they focused on were authorship and academic integrity, regulatory and legal issues, privacy,
+              trust and biases, misinformation and deepfakes, educational ethics, transparency and accountability,
+              authenticity and attribution and social and economic impact.</p>
+            <p><strong><u>IBM Principles for Trust and Transparency </u></strong></p>
+            <p>IBM&rsquo;s three principles for trust and transparency are the purpose of AI is to augment human
+              intelligence, data and insights belong to their creator and new technology must be transparent and
+              explainable (IBM, 2018).</p>
+            <p><strong><u>The global landscape of AI ethics guidelines</u></strong></p>
+            <p>Anna Jobin, Marcello Ienca and Effy Vayena theorised the majority of the ethical principles relevant to
+              AI are related to transparency, justice and fairness, non-maleficence, responsibility and privacy. They
+              also cited beneficence, freedom and autonomy, trust, dignity, sustainability and solidarity as the other
+              ethical principles that should be considered (Jobin et al., 2019).</p>
+            <p><strong><u>SAP&rsquo;s Global AI Ethics Guiding Principles and Governance Bodies</u></strong></p>
+            <p>SAP's ten ethical principles are; proportionality and do not harm, safety and security, fairness and
+              non-discrimination, sustainability, right to privacy and data protection, human oversight and
+              determination, transparency and explainability, responsibility and accountability, awareness and literacy
+              and multi-stakeholder and adoptive governance (SAP 2024).</p>
+            <p><strong><u>Mitigating the legal, social and ethical issues of Generative AI</u></strong></p>
+            <p>The social and ethical concerns of AI are mainly related to privacy breaches, algorithmic discrimination,
+              algorithmic opacity, security issues, reliability issues, transparency issues, increased surveillance,
+              environmental cost, legal accountability, sentient AI, misaligned AGI, super-intelligent AI, AI-related
+              existential risks, AI interfering in democratic processes, Autonomous weapons, environmental
+              sustainability, labour displacement and the principle of truthfulness. Whereas the legal concerns centre
+              around data protection, privacy, intellectual property and copyright laws.</p>
+            <p><strong><u>Conclusion</u></strong></p>
+            <p>Based on the articles and my own independent research, I believe the major ethical concerns for AI are
+              related to transparency, accountability, privacy, equality, security, and trust.</p>
+            <p>Additionally, there are many steps that individuals, organisations and governments can take to
+              mitigate the legal, social and ethical issues created Generative AI such as continuing their professional
+              development and constantly upskilling to reduce the risk of labour displacement and by watermarking any
+              content created by AI to avoid any copyright infringement.</p>
+            <p><strong><u>References</u></strong></p>
+            <p>Correa, N. et al. (2023)&nbsp;<em>Worldwide AI ethics: A review of 200 guidelines and recommendations for
+              AI governance</em>.</p>
+            <p>Deckard, R. (2023)&nbsp;<em>What are Ethics in AI.</em>&nbsp;BSC.</p>
+            <p>Oxford English Dictionary. (2014) Ethics. Available from: <a
+              href="https://www.oed.com/dictionary/ethics_n">https://www.oed.com/dictionary/ethics_n</a> [Accessed 4th
+              October 2024].</p>
+            <p>IBM. (2024) What is artificial intelligence (AI)? Available from: <a
+              href="https://www.ibm.com/topics/artificial-intelligence">https://www.ibm.com/topics/artificial-intelligence</a>
+              [Accessed 3rd October 2024].</p>
+            <p>IBM. (2023) What is Generative AI? Available from: <a
+              href="https://research.ibm.com/blog/what-is-generative-AI">https://research.ibm.com/blog/what-is-generative-AI</a>
+              [Accessed 2nd October 2024].</p>
+            <p>Al-kfairy, M. et al. (2024)&nbsp;<em>Ethical Challenges and Solutions of Generative AI: An
+              Interdisciplinary Perspective</em>.</p>
+            <p>IBM (2018). IBM&rsquo;s Principles for Trust and Transparency. Available from: <a
+              href="https://www.ibm.com/policy/wp-content/uploads/2018/06/IBM_Principles_SHORT.V4.3.pdf">https://www.ibm.com/policy/wp-content/uploads/2018/06/IBM_Principles_SHORT.V4.3.pdf</a>
+              [Accessed 4th October 2024].</p>
+            <p>Jobin, A., Ienca, M., &amp; Vayena, E. (2019). The global landscape of AI ethics guidelines. Nature
+              Machine Intelligence. 1. 10.1038/s42256-019-0088-2.</p>
+            <p>SAP (2024). SAP&rsquo;s Global AI Ethics Guiding Principles and Governance Bodies. Available from: <a
+              href="https://www.sap.com/documents/2018/09/940c6047-1c7d-0010-87a3-c30de2ffd8ff.html">https://www.sap.com/documents/2018/09/940c6047-1c7d-0010-87a3-c30de2ffd8ff.html</a>
+              [Accessed 4th October 2024].</p>
+            <br>
+            <!-- e-Portfolio Activity: Collaborative Learning Discussion 1 -->
+            <h5 id="collaborativeDiscussionInitialPost">Collaborative Discussion 1 - Initial Post</h5>
+            <p><strong><u>Introduction</u></strong></p>
+            <p>In this collaborative discussion, I will be highlighting the legal, ethical and social concerns from the
+              Malware case study (ACM, 2018).</p>
+            <p>The case study focuses on Rouge Services, a fictitious company that provided web hosting services to
+              cyber criminals until they were forcibly taken offline by a cyber-attack.</p>
+            <p><strong><u>BSC Code of Conduct Violations</u></strong></p>
+            <p>The BCS Code of Conduct (BCS, 2022) is a set of key principles for ensuring the integrity of IT
+              professionals. There are four key principles of the BSC code of conduct; the first one is related to
+              public
+              interest, the second one is related to professional competence and integrity, the third one is related to
+              duty to authority, and the final one is related to duty to profession.</p>
+            <p>Rouge Services violated the public interest principle as they showed no regard for the privacy or
+              security of others when they refused to do anything to stop cyber criminals from hosting malware on their
+              services. Their inaction could be interpreted as a human rights violation as the right to privacy is a
+              fundamental human right in over 185 countries (European Data Protection Supervisor, 2024).</p>
+            <p>Rouge Services violated the principle related to integrity as their inaction and lack of cooperation with
+              governmental agencies caused harm to the victims of the cyber-attacks carried out by their users.</p>
+            <p>Rouge Services violated the duty to relevant authority principle by failing to take any form of
+              responsibility for the cyber-attacks after they were made aware of them. In most jurisdictions, Rouge
+              Services would be considered complicit in their users&rsquo; crimes and could even be incarcerated.</p>
+            <p><strong><u>ACM Code of Ethics Violations</u></strong></p>
+            <p>The ACM Code of Ethics and Professional Conduct (ACM, 2021) outlines a series of ethical principles,
+              professional responsibilities and professional leadership principles that computing professionals must
+              abide by.</p>
+            <p>The general ethical principles related to avoiding harm and the quality of life of all peoples
+              (principles 1.1 and 1.2) were violated by Rouge Services as by allowing cybercriminals to host malicious
+              software they facilitated the harm caused by their clients.</p>
+            <p>The professional responsibilities related to the public good (principles 2.8 and 3.1) were violated by
+              Rouge Services as they were aware their services were being used by cybercriminals for criminal activity
+              and took no action, thereby failing to consider the public good.</p>
+            <p><strong><u>Conclusion</u></strong></p>
+            <p>Whilst Rouge Services' actions weren&rsquo;t technically illegal in their jurisdiction it was most
+              certainly unethical as they didn&rsquo;t consider the harm, they did to others by allowing their users to
+              carry out cyber-attacks. Additionally, the lack of cooperation with governmental agencies and the steps
+              said governmental agencies had to take to resolve the situation suggests a company that is only concerned
+              with its profits.</p>
+            <p><strong><u>References</u></strong></p>
+            <p>ACM. (2018) Code of Ethics Case Studies. Available from:&nbsp;<a
+              href="https://www.acm.org/code-of-ethics/case-studies">https://www.acm.org/code-of-ethics/case-studies</a>&nbsp;[Accessed
+              29 October 2024].</p>
+            <p>ACM. (2021) ACM Code of Ethics and Professional Conduct. Available from:&nbsp;<a
+              href="https://www.acm.org/">https://www.acm.org</a>&nbsp;[Accessed 29 October 2024].</p>
+            <p>BCS. (2022) BCS Code of Conduct. Available from:&nbsp;<a
+              href="https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf">https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf</a>&nbsp;[Accessed
+              28 October 2024]</p>
+            <p>European Data Protection Supervisor (2024) Data Protection. Available from:&nbsp;<a
+              href="https://www.edps.europa.eu/data-protection/data-protection_en">https://www.edps.europa.eu/data-protection/data-protection_en</a>&nbsp;[Accessed
+              29 October 2024]</p>
+            <br>
+            <h5 id="collaborativeDiscussionInitialPostResponseOne">Collaborative Discussion 1 - Initial Post Response
+              1</h5>
+            <p>Hi Samuel,</p>
+            <p>Thank you for the clear and concise analysis of the Malware case study.</p>
+            <p>Your post is both insightful and thought-provoking. You successfully identified and provided explanations
+              of the ethics violations that were persistently carried out by the Rogue company. The conclusion you
+              provided draws a clear line between the legal and the ethical issues which were ignored by the Rogue
+              company.</p>
+            <p>As you identified, this case highlights the Rogue company&rsquo;s refusal and unwillingness to take any
+              action against unethical behaviour of their clients. The refusal to address this unethical behaviour
+              suggests that the company ignored both the ACM (ACM, 2018) and BCS (BCS, 2022) principles because they
+              were, potentially, not required to do so legally.</p>
+            <p>One way to possibly expand and enhance your post could be aligning ACM Code of Ethics principles with BCS
+              Code of Conduct principles regarding the specific violations.</p>
+            <p>References</p>
+            <p>ACM (2018). ACM Code of Ethics and Professional Conduct. [online] Association for Computing Machinery.
+              Available at: <a href="https://www.acm.org/code-of-ethics">https://www.acm.org/code-of-ethics</a>
+              [Accessed 3 November 2024].</p>
+            <p>BCS (2022). BCS, The Chartered Institute For IT Code Of Conduct For Bcs Members. [online] Available at:
+              <a href="https://www.bcs.org/media/2211/bcs-code-ofconduct.pdf">https://www.bcs.org/media/2211/bcs-code-ofconduct.pdf</a>
+              [Accessed 3 November 2024].</p>
+            <br>
+            <h5 id="collaborativeDiscussionInitialPostResponseTwo">Collaborative Discussion 1 - Initial Post Response
+              2</h5>
+            <p>Good afternoon,</p>
+            <p>I enjoyed reading your insight into the operations of Rogue Services, and have they acted in regard to
+              malware.</p>
+            <p>I think your highlighting of potential human rights implications on the acts of IT professionals is
+              important to discuss. We often think about the direct ethical impacts of our work in the sector, but the
+              truth is that it can impact people in a much more profound way.</p>
+            <p>I think it would have been beneficial to look at the ethics discussions that arose when the actor took
+              aim at
+              Rogue Services to take them down. While they did launch their own attacks on Rogue Services, the ethical
+              implications of this are different due to the aims that the "good faith" actors did.</p>
+            <p>Overall, though, very enjoyable.</p>
+            <br>
+            <h5 id="collaborativeDiscussionInitialPostResponseThree">Collaborative Discussion 1 - Initial Post Response
+              3</h5>
+            <p>Your response effectively highlights the ethical and legal complexities of the case. To consider this
+              from another perspective, Rogue Services' behaviour can be likened to a landlord knowingly renting
+              properties to individuals engaging in harmful activities. While the building manager may not explicitly
+              break the
+              law, their inaction enables harm and erodes trust in their profession. Similarly, Rogue exploited the
+              absence of legal restrictions in their jurisdiction to justify unethical practices.</p>
+            <p>Gotterbarn (2016) emphasises that codes of ethics, like the ACM&rsquo;s, provide aspirational goals that
+              extend beyond legal requirements, offering moral guidance for professionals to act responsibly even in the
+              absence of formal regulations. While the law may not have addressed Rogue&rsquo;s actions, the ACM Code
+              fills this gap, urging computing professionals to prioritise societal well-being and avoid harm. This
+              underscores how ethical codes serve as critical safeguards for public trust when the law falls short.</p>
+            <p><strong>References:</strong></p>
+            <p>ACM (2018). ACM Code of Ethics and Professional Conduct. [online]&nbsp; Association for Computing
+              Machinery. Available at: <a
+                href="https://www.acm.org/code-of-ethics">https://www.acm.org/code</a> [Accessed 11 November 2024].</p>
+            <p>Gotterbarn, D., 2016. THINKING PROFESSIONALLY Codes of ethics--- the conscience of a profession:
+              connecting technology and society. <em>ACM Inroads</em>, <em>7</em>(4), pp.33-35.</p>
+            <p>&nbsp;</p>
+
+            <!-- Reasoning Quiz -->
+            <h5 id="reasoningQuiz">Reasoning Quiz</h5>
+            <object aria-describedby="reasoningQuiz" class="pdf-object" data="assets/Reasoning%20Quiz%20Answers.pdf"
+                    height="800px"
+                    type="application/pdf" width="100%">
+              <p>Your browser does not support embedded PDFs. You can <a aria-label="Download Reasoning Quiz Answers"
+                                                                         href="assets/Reasoning%20Quiz%20Answers.pdf"
+                                                                         target="_blank">download
+                the PDF</a>.</p>
+            </object>
+          </div>
+          <!-- Reflection Section -->
+          <h5 id="reflection">Reflection</h5>
+          <p><strong><u>Description</u></strong></p>
+          <p>This unit was the introductory unit of the Research Methods and Professional Practice module. The goals of
+            this unit were to be able to answer the following six questions; What is the purpose of research? What are
+            the
+            differences between deductive and inductive reasoning? What is the scientific method? What are research
+            ethics? What are AI ethics? What topic are you going to choose for the literature review?</p>
+          <p>For this unit of the module, we were required to read chapter 2 in the book &lsquo;Projects in Computing
+            and Information Systems: A Student's Guide&rsquo; (Dawson, 2015), the AI Robotics Ethics Society&rsquo;s
+            article on Worldwide AI Ethics (Correa et al., 2023), the article by Megan Finn and Katie Shilton critiquing
+            the Menlo report (Finn &amp; Shilton, 2023), the SSRN electronic journal article on Principled Artificial
+            Intelligence (Fjeld et al., 2020), the article from the British Computer Society on AI Ethics (Deckard,
+            2023), the Code of Conduct for BCS Members (BCS, 2021), the blog post by Daniel Miessler on the differences
+            between deductive and inductive reasoning (Miessler, 2018), the case studies on ethics from ACM (ACM, 2018)
+            and the blog post by Dan Fleetwood on what research actually is (Question Pro, 2021).</p>
+          <p>There were three formative activities for this unit. The first formative activity was a 1000-word
+            reflective activity on how the different countries all over the world mitigate the social, legal and ethical
+            issues related to Generative AI. The second formative activity was a collaborative discussion on the codes
+            of ethics from ACM (ACM 2018) and BCS (BCS, 2021). We had to write an initial 200-word post on the relevant
+            legal and social issues for one of the case studies from ACM (ACM, 2018). The third formative activity was a
+            multiple-choice quiz on examples of inductive and deductive reasoning.</p>
+          <p>There was a seminar for this unit of the module where Dr Outram introduced us to the module and went
+            through the work, we would be expected to complete by the end of unit two.</p>
+          <p><strong><u>Feelings</u></strong></p>
+          <p>I was confused as to why the recording of the first lecture was placed in the collaborative discussion
+            section instead of the module announcements section, as has been the case with all my previous modules.
+            Normally this wouldn't be much of an issue as I have attended the majority of the lectures to this point in
+            my studies, however, I missed the lecture for this unit as my phone didn&rsquo;t go off so I had to watch
+            the recording of the lecture. Due to it not being where I expected, it took me a couple of days to see
+            it.</p>
+          <p>I didn't receive the lecture slides in advance of this lecture as stated in my reasonable adjustment plan.
+            While this is understandable to an extent as the lecture took place one day after I was enrolled on the
+            course, I hope this won&rsquo;t be a regular occurrence as has been the case with most modules as receiving
+            the lecture slides early allows me to attend lectures being more prepared. I did receive an email from the
+            Dr Outram notifying me that she is aware of my reasonable adjustment plan which is something I had never
+            received before which seems to suggest my reasonable adjustment plan will be followed in this module which
+            would be a refreshing change of pace since most lectures tend to just ignore it.</p>
+          <p>While the introductory lecture was certainly a lot more detailed than previous modules, it did raise a
+            couple of potential concerns for me, firstly, it seemed like Dr Outram was just reading off the slides and
+            the
+            slides were very wordy whilst this is not a major issue I would have expected Dr Outram to add some of her
+            own insights as I fear if this continues, the attendance in the lectures will continue to fall as they may
+            view them as pointless if the lecturer is just going to read off the slides as they can do that in their own
+            time. Additionally, there were some minor grammatical errors on one of the slides again whilst this may not
+            be a big issue it could suggest the course may have been rushed when put together. Another key takeaway from
+            the lecture was the Dr Outram is a relatively slow talker which may take some getting used to.</p>
+          <p>When I was reading through the learning platform, I noticed some more issues where the images on the
+            learning platform pointed to a broken link and the year on some of the references wasn't correct. This is
+            not something I would have expected from postgraduate studies as I would have expected the learning platform
+            would have been regularly reviewed to prevent this issue. I am not sure whether this would have been done by
+            IT, Dr Outram or a research assistant, but it is a huge oversight not to review the course content before
+            students enrol in the module. I noticed a lot of mistakes in a previous module where the learning platform
+            was out of date or contained duplicate entries, and it caused a great deal of confusion to both me and the
+            other students, so I hope this does not happen again in this module.</p>
+          <p>I was rather disappointed by the fact the questions from the reasoning quiz were copied verbatim off the
+            internet as this could be a rather worrying sign of little effort on the lecture&rsquo;s behalf. I
+            experienced this a lot during my undergraduate degree where it seemed like the lecturers didn&rsquo;t want
+            to teach as they were primarily researchers and during lectures would just read off the slides. I would hope
+            this isn&rsquo;t the case for a postgraduate degree.</p>
+          <p>I felt as if the amount of work we were expected to do in this module was excessive as there was a
+            significant amount of required reading in addition to the 1000-word reflective activity, the collaborative
+            discussion and the multiple-choice quiz. This seems like a lot to do in a week for part-time students who
+            typically have to balance their studies with other commitments.</p>
+          <p><strong><u>Evaluation</u></strong></p>
+          <p>The aspects of the unit that I feel went well were; all module goals were achieved, my ability to read
+            and understand technical documents improved as a result of the significant amount of required reading and
+            research I had to do in this unit of the module.</p>
+          <p>I found the introductory lecture to be very informative, which is more than I could say for previous
+            modules
+            where the introductory lecture would typically be around 30 minutes. Due to the length of this lecture, Dr
+            Outram was able to go into a lot more detail.</p>
+          <p>The main area where I could have improved during this unit of the module was with my time management as
+            during the first week of the module, I was still working on the portfolio assignment from the previous
+            module so didn&rsquo;t have as much time to work on the formative activities this week as I would have
+            liked,
+            and as I missed the first lecture, I had to spend time re-watching the lecture that could have been spent
+            working on the formative actives.</p>
+          <p>The only other negatives I really had for this unit of the module were I would have liked to have received
+            the lecture slides early even if it was only a day early as it would have allowed me to be more prepared for
+            the module, and the reading required for this unit of the module felt tedious after a while due to the sheer
+            amount of reading I did during this unit of the module.</p>
+          <p><strong><u>Analysis</u></strong></p>
+          <p>As someone who would struggle to determine social and ethical considerations due to my mental deficiencies,
+            this unit provided me with an opportunity for significant personal growth, as by understanding relevant
+            legal, ethical and social issues; I can make better decisions.</p>
+          <p>As I am planning on applying for PHD&rsquo;s I believe this unit will be extremely beneficial as for part
+            of the application process you have to write research proposals. Additionally, I believe this unit will
+            prepare me for the dissertation as it will require a significant amount of research.</p>
+          <p><strong><u>Conclusion</u></strong></p>
+          <p>Over the course of the unit, I learnt a lot about research, ethics, the scientific method and the different
+            types of reasoning as I had never previously done any modules on research, so there was a lot of stuff to
+            learn. As I am planning on doing a PHD and am actively thinking about working in research, knowing as much
+            about research and ethics as possible is key.</p>
+          <p>For my choice of topic for the literature review, I was unable to choose between the machine learning tools
+            or techniques used in predicting sports results and the AI-based assistive technology for the disabled as
+            both these topics are of particular interest to me as I watch a lot of sports, and I am disabled. My plan is
+            to research both topics before deciding which one to do the literature review on.</p>
+          <p><strong><u>Action plan</u></strong></p>
+          <p>If I was to redo this unit of the module, I would have made sure not to miss the lecture and I would have
+            managed my time better in the previous module and planned for being ill, so I wouldn't need to manage the
+            workload of two modules for the first week as due to this I fell behind in this module.</p>
+          <p><strong><u>References</u></strong></p>
+          <p>Gibbs, G. (1998) Learning by Doing: A guide to teaching and learning methods. Further Education Unit.
+            Oxford Polytechnic: Oxford.</p>
+          <p>Dawson, C. (2015)&nbsp;<em>Projects in Computing and Information Systems: A Student's Guide</em>. Harlow:
+            Pearson.</p>
+          <p>Correa, N. et al. (2023)&nbsp;<em>Worldwide AI ethics: A review of 200 guidelines and recommendations for
+            AI governance</em>.</p>
+          <p>Finn, M., &amp; Shilton, K. (2023). Ethics governance development: The case of the Menlo Report.&nbsp;<em>Social
+            Studies of Science</em>&nbsp;53(3): 315–340.</p>
+          <p>Fjeld, J., Achten, N., Hilligoss, H., Nagy, A. &amp; Srikumar, M. (2020)&nbsp;<em>Principled artificial
+            intelligence: Mapping consensus in ethical and rights-based approaches to principles for AI</em>. Berkman
+            Klein Center Research Publication.</p>
+          <p>Deckard, R. (2023)&nbsp;<em>What are Ethics in AI.</em>&nbsp;BSC.</p>
+          <p>BCS. (2021)&nbsp;<em>The Chartered Institute for IT</em>. The Code of Conduct.</p>
+          <p>Miessler, D. (2020)&nbsp;<em>The Difference between Deductive and Inductive Reasoning</em>.</p>
+          <p>ACM. (2018) Code of Ethics Case Studies. Available from:&nbsp;<a
+            href="https://www.acm.org/code-of-ethics/case-studies">https://www.acm.org/code-of-ethics/case-studies</a>&nbsp;[Accessed
+            29 October 2024].</p>
+          <p>QuestionPro. (2021)&nbsp;<em>What is research?</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Unit Navigation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <div class="unit-navigation d-flex justify-content-between">
+        <a class="btn-nav w-100 ms-2" href="unit2.html">Next Unit →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Research Methods and Professional Practice E-Portfolio</p>
+</footer>
+
+<!-- External JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Preloader JavaScript -->
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  });
+</script>
+
+<!-- Initialize AOS (Animate on Scroll) for scroll-based animations -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Custom JavaScript (if any, for additional functionality) -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

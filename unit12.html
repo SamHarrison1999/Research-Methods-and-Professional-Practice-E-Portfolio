@@ -1,0 +1,411 @@
+<!doctype html>
+<!--suppress JSUnresolvedReference -->
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta-Information for SEO and Social Sharing -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Unit 12: Project Management and Managing Risk - E-Portfolio</title>
+  <meta
+    content="Detailed view of Unit 12: Project Management and Managing Risk."
+    name="description">
+
+  <!-- Open Graph meta-tags for Social Media Sharing -->
+  <meta content="Unit 12: Project Management and Managing Risk" property="og:title">
+  <meta content="website" property="og:type">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit12.html"
+    property="og:url">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit12-image.jpg"
+    property="og:image">
+  <meta content="Unit 12: Project Management and Managing Risk" property="og:image:alt">
+
+  <!-- External CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon and Icons -->
+  <link href="/favicon.ico" rel="icon" sizes="any">
+  <link href="/icon.svg" rel="icon" type="image/svg+xml">
+  <link href="icon.png" rel="apple-touch-icon">
+
+  <!-- Web App Manifest -->
+  <link href="site.webmanifest" rel="manifest">
+  <meta content="#fafafa" name="theme-color">
+
+  <!-- Inline CSS for layout -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Navigation Buttons */
+    .unit-navigation {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .unit-navigation a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-nav {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      display: block;
+      text-align: center;
+    }
+
+    .btn-nav:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+
+    .unit-navigation .btn-nav {
+      flex: 1; /* Ensure both buttons take up equal space */
+    }
+
+    .unit-navigation {
+      margin: 20px 0; /* Space around navigation buttons */
+    }
+
+    .me-2 {
+      margin-right: 0.5rem; /* Right margin for Previous Unit button */
+    }
+
+    /* Updated Header Styles */
+    header {
+      background-color: transparent; /* No background */
+      padding: 1rem 0; /* Smaller padding */
+    }
+
+    header.unit-header {
+      max-width: 100%; /* Align with the content's width */
+      margin: 0 auto;
+    }
+
+
+    .unit-header h1 {
+      font-size: 2rem; /* Smaller title */
+    }
+
+    .unit-header p {
+      font-size: 1rem; /* Smaller subtitle */
+    }
+
+    /* Added gap between embedded PDFs and removed borders */
+    .pdf-object {
+      margin-bottom: 20px; /* Creates a gap between the PDFs */
+      border: none; /* Removes the border around embedded PDFs */
+      width: 100%; /* Ensures PDF takes the full width of the container */
+      height: 800px; /* Set fixed height for the PDFs */
+    }
+
+    /* Removes border from the card */
+    .card {
+      border: none;
+    }
+
+    /* Make the content section the same width as the title */
+    .unit-content {
+      max-width: 100%; /* Full width */
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Research Methods and Professional Practice E-Portfolio</a>
+    <button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+            type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <!-- Dropdown for Units -->
+        <li class="nav-item dropdown">
+          <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+             id="unitsDropdown"
+             role="button">
+            Units
+          </a>
+          <ul aria-labelledby="unitsDropdown" class="dropdown-menu">
+            <li><a class="dropdown-item" href="unit1.html">Unit 1</a></li>
+            <li><a class="dropdown-item" href="unit2.html">Unit 2</a></li>
+            <li><a class="dropdown-item" href="unit3.html">Unit 3</a></li>
+            <li><a class="dropdown-item" href="unit4.html">Unit 4</a></li>
+            <li><a class="dropdown-item" href="unit5.html">Unit 5</a></li>
+            <li><a class="dropdown-item" href="unit6.html">Unit 6</a></li>
+            <li><a class="dropdown-item" href="unit7.html">Unit 7</a></li>
+            <li><a class="dropdown-item" href="unit8.html">Unit 8</a></li>
+            <li><a class="dropdown-item" href="unit9.html">Unit 9</a></li>
+            <li><a class="dropdown-item" href="unit10.html">Unit 10</a></li>
+            <li><a class="dropdown-item" href="unit11.html">Unit 11</a></li>
+            <li><a class="dropdown-item" href="unit12.html">Unit 12</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+
+  <!-- Unit Header -->
+  <header class="unit-header text-center">
+    <div class="container-fluid">
+      <!-- Main Title and Subtitle -->
+      <h1 aria-labelledby="unitTitle" class="display-4">Unit 12: Project Management and Managing Risk</h1>
+    </div>
+  </header>
+
+  <!-- Unit Navigation -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div class="unit-navigation d-flex justify-content-between">
+          <a class="btn-nav w-100 me-2" href="unit11.html">← Previous Unit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Unit Content -->
+  <section class="unit-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <!-- Unit Overview -->
+          <h3>Unit Overview</h3>
+          <p>In Unit 12, you will explore the fundamentals of project management, the project life cycle, and
+            methodologies, with a focus on managing risks and changes to ensure project quality, cost control, and
+            timely delivery.</p>
+
+          <!-- Learning Objectives -->
+          <h4>Learning Objectives</h4>
+          <ul>
+            <li>Define and explain the principles of project management and project life cycles.</li>
+            <li>Explore project methodologies and the tools/technologies for supporting remote collaboration.</li>
+            <li>Analyse how risks, uncertainties, and constraints impact project outcomes.</li>
+            <li>Develop a risk management plan to address potential threats and opportunities.</li>
+            <li>Understand and implement effective change control processes to manage project scope and maintain
+              quality.
+            </li>
+            <li>Integrate risk and change management strategies into individual and collaborative projects.</li>
+          </ul>
+
+          <!-- Assignment Section -->
+          <h4>Assignment</h4>
+          <div class="card mb-3">
+            <object aria-describedby="Module Reflection"
+                    class="pdf-object"
+                    data="assets/Module%20Reflection%20Assignment.pdf"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the module reflection assignment"
+                href="assets/Module%20Reflection%20Assignment.pdf"
+                target="_blank">download the PDF</a>.</p>
+            </object>
+          </div>
+
+          <!-- Artefacts Section -->
+          <h4>Artefacts</h4>
+
+          <div class="card mb-3">
+            <h5 id="Self Test Quiz">Self Test Quiz</h5>
+            <object aria-describedby="Self Test Quiz"
+                    class="pdf-object"
+                    data="assets/Self%20Test%20Quiz.pdf"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download answers to the self test quiz in unit 12"
+                href="assets/Self%20Test%20Quiz.pdf"
+                target="_blank">download the PDF</a>.</p>
+            </object>
+          </div>
+
+          <!-- Reflection Section -->
+          <h5 id="reflection">Reflection</h5>
+          <p><strong><u>Description</u></strong></p>
+          <p>This unit was the final unit of the Research Methods and Professional Practice module, focusing on project
+            management and managing risk. The goals of this unit were to explore the principles of project management,
+            project methodologies, and project life cycles, analyse how risks and constraints impact project outcomes,
+            develop a risk management plan, understand how to implement effective change control processes to manage
+            project scope and maintain quality, and learn how to integrate risk and change management strategies into
+            projects.</p>
+          <p>For this unit, we were required to read chapters 1, 3, 6, and 11 from Project Management for Engineering,
+            Business, and Technology (Nicholas &amp; Steyn, 2020), A Guide to the Project Management Body of Knowledge
+            (Project Management Institute, 2020), an article on project management (Hart, 2023), an article on project
+            management using agile frameworks (Mircea, 2019), a webpage on Gantt Charts from the Association for Project
+            Management (APM, 2023), and an article on AI for space traffic management (Manfletti et al., 2023).</p>
+          <p>The module reflection and e-portfolio were due in this unit, and the only formative activity for this unit
+            was the self-test quiz.</p>
+          <p><strong><u>Feelings</u></strong></p>
+          <p>Completing this final unit was both a rewarding and challenging experience. I felt a sense of
+            accomplishment as I reflected on my progress throughout the module. However, I also experienced frustration
+            due to inconsistencies between the reading lists provided on the learning platform and those outlined in the
+            syllabus. This made it difficult to determine which materials were essential, leading to inefficiencies in
+            my study process.</p>
+          <p>Despite this, I found the practical application of project management concepts engaging, especially in
+            understanding risk management and change control processes. These topics provided valuable insights into
+            real-world project implementation. However, I was slightly overwhelmed by the breadth of project management
+            methodologies covered, as I had limited prior experience with structured project planning frameworks.</p>
+          <p><strong><u>Evaluation</u></strong></p>
+          <p>A key strength of this unit was its focus on practical project management principles, particularly risk
+            assessment and mitigation strategies. The content was highly applicable to professional settings, and
+            learning about different project management methodologies (e.g. Agile and Waterfall) helped me appreciate
+            their use in different contexts. The readings from Nicholas and Steyn (2020) provided a solid theoretical
+            foundation, while case studies illustrated how these methodologies are applied in real-world projects.</p>
+          <p>&nbsp;</p>
+          <p>However, the lack of structured formative activities meant there was minimal opportunity to receive
+            feedback before the final submission. Additionally, the inconsistencies in the reading materials created
+            confusion, which could have been avoided with better alignment between the syllabus and the online platform.
+            The self-test quiz was useful for reinforcing key concepts but did not provide a comprehensive assessment of
+            my understanding.</p>
+          <p><strong><u>Analysis</u></strong></p>
+          <p>The challenges I faced in this unit highlighted the importance of effective time management and information
+            synthesis. The discrepancies in the reading list reinforced the need for independent verification of
+            resources, a skill that is essential for any research-driven work. The emphasis on risk management also
+            provided a deeper understanding of proactive decision-making, which is crucial in project execution.</p>
+          <p>A key learning point was the realisation that project risks are not always negative&mdash;some risks
+            present opportunities that, if managed correctly, can lead to innovation and competitive advantage (Project
+            Management Institute, 2020). This perspective changed how I viewed risk management, shifting my focus from
+            risk avoidance to risk optimisation.</p>
+          <p>Additionally, the introduction to Gantt charts (APM, 2023) and Agile methodologies (Mircea, 2019) was
+            particularly useful. These tools will be valuable in future research and professional projects, allowing for
+            better organisation and adaptability.</p>
+          <p><strong><u>Conclusion</u></strong></p>
+          <p>This unit provided a strong foundation in project management, highlighting the importance of structured
+            planning, risk assessment, and change management. While I successfully engaged with the content, there were
+            areas where I could have improved, such as dedicating more time to exploring specific project management
+            software tools.</p>
+          <p>Moving forward, I aim to refine my project planning and risk management skills by applying these concepts
+            in real-world settings. The inconsistencies in the reading lists also taught me the importance of
+            cross-referencing academic materials to ensure I am accessing the most relevant and up-to-date
+            information.</p>
+          <p><strong><u>Action plan</u></strong></p>
+          <p>To build on the knowledge and skills gained in this unit, I will take several strategic actions to
+            strengthen my project management and risk assessment abilities. First, I will deepen my understanding of
+            project management software tools such as Jira. These tools are essential for task management, scheduling,
+            and tracking risks, which will be beneficial for both academic and professional projects. By completing
+            online tutorials and applying these tools to personal or collaborative projects, I aim to enhance my ability
+            to organise tasks efficiently and monitor project progress effectively.</p>
+          <p>&nbsp;</p>
+          <p>A key takeaway from this unit was the importance of risk management in project execution. To further
+            develop this skill, I will practice identifying, categorising, and mitigating risks by using frameworks such
+            as the Risk Breakdown Structure (RBS). I will also analyse case studies of successful and failed projects to
+            understand how risk assessment impacts decision-making. Additionally, I plan to explore risk management
+            certifications, such as the PMI Risk Management Professional (PMI-RMP), to gain a more structured approach
+            to handling project uncertainties.</p>
+          <p>Time management is another critical area for improvement. Throughout this module, I faced challenges in
+            balancing multiple assignments, especially when reading lists were inconsistent. To address this, I will
+            implement time-blocking techniques and make use of Gantt charts to structure my workload more effectively.
+            This will ensure that I allocate enough time to research, writing, and reflection, reducing last-minute
+            stress and improving the quality of my work.</p>
+          <p>Finally, I recognise the value of professional certifications in validating my skills and increasing
+            employability. Over the next year, I will work towards getting a project management certification, such as
+            the Certified Associate in Project Management (CAPM). These credentials will not only reinforce my
+            theoretical knowledge but also provide practical frameworks for managing real-world projects successfully.
+            By integrating these strategies into my professional development plan, I aim to apply the project management
+            and risk management concepts learned in this unit effectively in my future career.</p>
+          <p><strong><u>References</u></strong></p>
+          <p>The Association for Project Management (APM). (2023)&nbsp;<em>What is a Gantt Chart?</em></p>
+          <p>Gibbs, G. (1998) Learning by Doing: A guide to teaching and learning methods. Further Education Unit.
+            Oxford Polytechnic: Oxford.</p>
+          <p>Hart, R (2023) All About Project Management. Available from: <a
+            href="https://management.org/projectmanagement/index.htm#anchor440783">https://management.org/projectmanagement/index.htm#anchor440783</a>
+            [Accessed 26<sup>th</sup> January 2025].</p>
+          <p>Nicholas, J.M. &amp; Steyn, H., (2020)&nbsp;<em>Project management for engineering, business and
+            technology.</em>&nbsp;Routledge.</p>
+          <p>Mircea, E. (2019)&nbsp;<em>Project Management using Agile Frameworks.</em></p>
+          <p>Manfletti, C., Guimar&atilde;es, M. and Soares, C. (2023) &lsquo;AI for space traffic management&rsquo;,
+            <em>Journal of Space Safety Engineering</em>, 10(4), pp. 495&ndash;504. doi:10.1016/j.jsse.2023.08.007.</p>
+          <p>Project Management Institute. (2020)&nbsp;<em>A Guide to the Project Management Body of Knowledge PMBOK
+            Guide, 7th Edition.</em>&nbsp;Newtown Square, PA: Project Management Institute.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Unit Navigation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <div class="unit-navigation d-flex justify-content-between">
+        <a class="btn-nav w-100 me-2" href="unit11.html">← Previous Unit</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Research Methods and Professional Practice E-Portfolio</p>
+</footer>
+
+<!-- External JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Preloader JavaScript -->
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  });
+</script>
+
+<!-- Initialize AOS (Animate on Scroll) for scroll-based animations -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Custom JavaScript (if any, for additional functionality) -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
+

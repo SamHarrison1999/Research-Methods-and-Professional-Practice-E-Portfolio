@@ -1,0 +1,531 @@
+<!doctype html>
+<!--suppress JSUnresolvedReference -->
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta-Information for SEO and Social Sharing -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Unit 3: Methodology and Research Methods - E-Portfolio</title>
+  <meta
+    content="Detailed view of Unit 3: Methodology and Research Methods."
+    name="description">
+
+  <!-- Open Graph meta-tags for Social Media Sharing -->
+  <meta content="Unit 3: Methodology and Research Methods" property="og:title">
+  <meta content="website" property="og:type">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit3.html"
+    property="og:url">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit3-image.jpg"
+    property="og:image">
+  <meta content="Unit 3: Methodology and Research Methods" property="og:image:alt">
+
+  <!-- External CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon and Icons -->
+  <link href="/favicon.ico" rel="icon" sizes="any">
+  <link href="/icon.svg" rel="icon" type="image/svg+xml">
+  <link href="icon.png" rel="apple-touch-icon">
+
+  <!-- Web App Manifest -->
+  <link href="site.webmanifest" rel="manifest">
+  <meta content="#fafafa" name="theme-color">
+
+  <!-- Inline CSS for layout -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Navigation Buttons */
+    .unit-navigation {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .unit-navigation a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-nav {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      display: block;
+      text-align: center;
+    }
+
+    .btn-nav:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+
+    .unit-navigation .btn-nav {
+      flex: 1; /* Ensure both buttons take up equal space */
+    }
+
+    .unit-navigation {
+      margin: 20px 0; /* Space around navigation buttons */
+    }
+
+    .me-2 {
+      margin-right: 0.5rem; /* Right margin for Previous Unit button */
+    }
+
+    .ms-2 {
+      margin-left: 0.5rem; /* Left margin for Next Unit button */
+    }
+
+    /* Updated Header Styles */
+    header {
+      background-color: transparent; /* No background */
+      padding: 1rem 0; /* Smaller padding */
+    }
+
+    header.unit-header {
+      max-width: 100%; /* Align with the content's width */
+      margin: 0 auto;
+    }
+
+
+    .unit-header h1 {
+      font-size: 2rem; /* Smaller title */
+    }
+
+    .unit-header p {
+      font-size: 1rem; /* Smaller subtitle */
+    }
+
+    /* Removes border from the card */
+    .card {
+      border: none;
+    }
+
+    /* Make the content section the same width as the title */
+    .unit-content {
+      max-width: 100%; /* Full width */
+    }
+
+    /* Preloader Styles */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #preloader .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #007bff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Research Methods and Professional Practice E-Portfolio</a>
+    <button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+            type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <!-- Dropdown for Units -->
+        <li class="nav-item dropdown">
+          <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+             id="unitsDropdown"
+             role="button">
+            Units
+          </a>
+          <ul aria-labelledby="unitsDropdown" class="dropdown-menu">
+            <li><a class="dropdown-item" href="unit1.html">Unit 1</a></li>
+            <li><a class="dropdown-item" href="unit2.html">Unit 2</a></li>
+            <li><a class="dropdown-item" href="unit3.html">Unit 3</a></li>
+            <li><a class="dropdown-item" href="unit4.html">Unit 4</a></li>
+            <li><a class="dropdown-item" href="unit5.html">Unit 5</a></li>
+            <li><a class="dropdown-item" href="unit6.html">Unit 6</a></li>
+            <li><a class="dropdown-item" href="unit7.html">Unit 7</a></li>
+            <li><a class="dropdown-item" href="unit8.html">Unit 8</a></li>
+            <li><a class="dropdown-item" href="unit9.html">Unit 9</a></li>
+            <li><a class="dropdown-item" href="unit10.html">Unit 10</a></li>
+            <li><a class="dropdown-item" href="unit11.html">Unit 11</a></li>
+            <li><a class="dropdown-item" href="unit12.html">Unit 12</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+
+  <!-- Unit Header -->
+  <header class="unit-header text-center">
+    <div class="container-fluid">
+      <!-- Main Title and Subtitle (Smaller Font) -->
+      <h1 aria-labelledby="unitTitle" class="display-4">Unit 3: Methodology and Research Methods</h1>
+    </div>
+  </header>
+
+  <!-- Unit Navigation -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div class="unit-navigation d-flex justify-content-between">
+          <a class="btn-nav w-100 me-2" href="unit2.html">← Previous Unit</a>
+          <a class="btn-nav w-100 ms-2" href="unit4.html">Next Unit →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Unit Content -->
+  <section class="unit-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <!-- Unit Overview -->
+          <h3>Unit Overview</h3>
+          <p>In Unit 3, we delved into research methodologies and methods, focusing on research design and the different
+            data collection approaches.</p>
+
+          <!-- Learning Objectives -->
+          <h4>Learning Objectives</h4>
+          <ul>
+            <li>Differentiate between exploratory and descriptive research designs.</li>
+            <li>Understand the principles of qualitative, quantitative, and mixed methods research.</li>
+            <li>Identify appropriate data collection techniques for various research methods.</li>
+            <li>Evaluate which research methods align best with your chosen research area.</li>
+          </ul>
+
+          <!-- Artefacts Section -->
+          <h4>Artefacts</h4>
+          <p>This section includes the artefacts completed during this unit.</p>
+
+          <div class="card mb-3">
+            <!-- e-Portfolio Activity: Research Proposal Review -->
+            <h5 id="reflectiveActivity">Research Proposal Review Activity</h5>
+            <p><strong><u>Which of the methods described in this week&rsquo;s reading would you think would</u></strong><strong>
+              <u>suit your purpose?</u> </strong></p>
+            <ul>
+              <li>Combination of quantitative and qualitative data (Mixed method simple / Mixed method complex)</li>
+            </ul>
+            <p><strong><u>Which data collection methods would you consider using?</u></strong></p>
+            <ul>
+              <li>Surveys</li>
+              <li>Interviews</li>
+              <li>Case studies</li>
+              <li>Statistical studies</li>
+              <li>Evaluative studies</li>
+              <li>Textual analysis</li>
+              <li>Action research</li>
+            </ul>
+            <p><strong><u>Which required skills will you need to have or develop for the chosen project?</u></strong>
+            </p>
+            <ul>
+              <li>Ability to understand and summarise technical jargon</li>
+              <li>Critical writing skills</li>
+              <li>Research skills</li>
+              <li>Communication skills</li>
+              <li>Attention to detail</li>
+              <li>Understanding of research ethics</li>
+              <li>Interpersonal skills</li>
+              <li>Empathy</li>
+              <li>Emotional intelligence</li>
+              <li>Critical thinking</li>
+            </ul>
+            <br>
+            <!-- e-Portfolio Activity: Collaborative Learning Discussion 1 -->
+            <h5 id="collaborativeDiscussionSummaryPost">Collaborative Discussion 1 Summary Post</h5>
+            <p><strong><u>Introduction </u></strong></p>
+            <p>After reading through and contributing to the collaborative discussion posts from the other students and
+              receiving feedback from Mario and Thomas on my initial post, I have learnt a lot about the importance of
+              ethics in IT and the role it plays to ensure there has been no wrongdoing. I believe gaining insights from
+              my peers is invaluable as they have a lot more experience than me and were able to provide insights that I
+              had not previously considered.</p>
+            <p>In my initial post, I explored the ethical, legal and social implications of the Malware Disruption case
+              study provided by ACM (ACM, 2018). The case study looked at the mistakes made by Rouge Services and how
+              they were complicit with Cyber-criminals using their web hosting services to perform malware attacks. Due
+              to the laws surrounding malware varying from country to country, having a global consensus on the ethical
+              considerations helps to ensure some form of consistency even if there are not legally binding.</p>
+            <p><strong><u>Mario&rsquo;s Response</u></strong></p>
+            <p>Mario suggested that I referenced how the ACM Code of Ethics (ACM, 2021) and the BCS Code of Conduct
+              (BCS, 2022) are aligned as there is a lot of overlap between the two. When reading the posts of the other
+              students, I noticed that some of the other students pointed how the specific sections of the ACM Code of
+              Ethics are related to the BCS Code of Conduct. I thought this explanation added a lot of value to their
+              post as it showed how while the ethical guidelines vary between organisations, the general principles are
+              still the same. I agree with Mario that this explanation would have improved the quality of my initial
+              post.</p>
+            <p><strong><u>Thomas&rsquo;s Response</u></strong></p>
+            <p>Thomas suggested that I considered the ethical implications of all those involved in the case study not
+              just Rouge services. The reason I didn&rsquo;t do this in my initial post was due to the suggested word
+              count. Even though I believe my reasoning for not adding this was valid, I agree with Thomas that my post
+              could have benefited from the ethical concerns for those who built the worm that forcibly took Rouge
+              Services offline as it would have demonstrated my ability to look at the bigger picture by considering the
+              legal, ethical and social concerns for everyone involved. For example, while the intentions of the worm
+              were to prevent any further harm, ultimately the worm caused harm to Rouges Services more legitimate
+              clients, thereby breaking ethical principles related to unintentional harm and destruction of data even
+              though they had good intentions. To quote Kristin Hannah, a number one New York Times bestselling author
+              &ldquo;It&rsquo;s not intentions that matter, It&rsquo;s actions&rdquo;.</p>
+            <p><strong><u>Conclusion</u></strong></p>
+            <p>While the ethical guidelines provided by ACM (ACM, 2021) and BCS (BCS, 2022) are good idea in theory as
+              they are a useful tool in educating people on what it means to be ethical, the usefulness of them can be
+              brought into question as they are not enforceable as they are merely guidelines and not laws as such
+              individuals and organisations can choose to ignore them.</p>
+            <p><strong><u>References</u></strong></p>
+            <p>ACM (2018).&nbsp;<em>Case: Malware Disruption</em> - ACM Ethics. Available at:&nbsp;<a
+              href="https://ethics.acm.org/code-of-ethics/using-the-code/case-malware-disruption/">https://ethics.acm.org/code-of-ethics/using-the-code/case-malware-disruption/</a>
+              [Accessed 14 November 2024].</p>
+            <p>ACM. (2021) ACM Code of Ethics and Professional Conduct. Available from:&nbsp;<a
+              href="https://www.acm.org/">https://www.acm.org</a>&nbsp;[Accessed 14 November 2024].</p>
+            <p>BCS. (2022) BCS Code of Conduct. Available from:&nbsp;<a
+              href="https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf">https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf</a>&nbsp;[Accessed
+              14 November 2024]</p>
+            <p>&nbsp;</p>
+
+          </div>
+
+          <!-- Seminar Preparation Activity Section -->
+          <h5 id="seminarPreparationActivity">Seminar Preparation Activity</h5>
+          <p><strong><u>Peer Review Activity</u></strong></p>
+          <p><strong><u>Introduction</u></strong></p>
+          <p>The two sources I will be reviewing in this peer review activity are the articles &lsquo;Artificial
+            Intelligence Techniques and Methodology&rsquo; published in AI Magazine (Carbonell &amp; Sleeman, 1982) and
+            &lsquo;Artificial Intelligence Research: A Review on Dominant Themes, Methods, Frameworks, and Future
+            Research Directions&rsquo; from The Alliance of Biodiversity International and the International Center for
+            Tropical Agriculture (CIAT) (Ofosu-Ampong, 2024).</p>
+          <p><strong><u>Artificial Intelligence Techniques and Methodology</u></strong></p>
+          <p>The article in AI Magazine analyses past AI research projects to guide future research. It combines a
+            theoretical analysis with a reflection on the methods AI researchers use to address specific problems and
+            proposes improvements to AI research methodologies through a meta-analysis. As the findings are theoretical,
+            one could question the real-world value.</p>
+          <p><strong><u>Artificial Intelligence Research: A Review on Dominant Themes, Methods, Frameworks, and Future
+            Research Directions</u></strong></p>
+          <p>The article from CIAT is a comprehensive literature review and thematic analysis of 85 peer reviewed
+            articles on AI research themes and methodologies between 2020 and 2023. The article looks at emerging trends
+            in technology and security issues with AI with the goal of guiding the future of AI research. While the
+            article uses a lot of secondary research, one could argue it doesn&rsquo;t use enough primary research.</p>
+          <p><strong><u>Comparing the studies</u></strong></p>
+          <p>The article in AI Magazine focuses on refining the research methodologies used in AI research, whereas the
+            article from CIAT reviews AI research trends and offers insights into emerging areas of focus. The
+            methodologies used in both articles are appropriate (reflective analysis in the article in AI magazine and a
+            systematic review in the article from CIAT).</p>
+          <p>Both articles rely on data from secondary sources instead of primary research which may cause one to
+            question their validity. Regardless of this, both articles contributed significantly to AI research.</p>
+          <p><strong><u>Future Enhancements </u></strong></p>
+          <p>Both articles could be enhanced by integrating more empirical data, contemporary trends, and
+            interdisciplinary perspectives to make them more applicable to the current and future directions of AI
+            research. Additionally, they could incorporate primary research and quantitative analyses to provide
+            stronger evidence for the arguments presented, with real-world case studies to have an immediate impact on
+            AI research instead of being mainly theoretical.</p>
+          <p><strong><u>Conclusion</u></strong></p>
+          <p>While both articles are mainly theoretical and could have benefited from primary research, they certainly
+            do provide value in the field of AI research as they both contributed to the collective body of
+            knowledge.</p>
+          <p><strong><u>References</u></strong></p>
+          <p>Carbonell, J.G. &amp; Sleeman, D., (1982) Artificial intelligence techniques and methodology. AI Magazine,
+            3(2), pp.47-56. Available at: <a href="https://doi.org/10.1609/aimag.v3i2.371">https://doi.org/10.1609/aimag.v3i2.371</a>
+            [Accessed 20 November 2024].</p>
+          <p>Ofosu-Ampong, K., (2024) Artificial intelligence research: A review on dominant themes, methods,
+            frameworks, and future research directions. CGIAR, 15 November. Available at: <a
+              href="https://www.cgiar.org">https://www.cgiar.org</a> [Accessed 20 November 2024].</p>
+          <br>
+          <!-- Reflection Section -->
+          <h5 id="reflection">Reflection</h5>
+          <p><strong><u>Description</u></strong></p>
+          <p>This unit was the third unit of the Research Methods and Professional Practices module. This unit focused
+            on the different data collection methods as well as the different methods and methodologies used in
+            research.</p>
+          <p>For this unit we were required to read an extract from chapter 2 in the book &lsquo;Projects in Computing
+            and Information Systems: A Student's Guide&rsquo; (Dawson, 2015), the article from the British Research
+            Methodology on Research Design (BRM, 2018), the article from question pro on research (QuestionPro, 2021) in
+            addition to watching the lecture from Sam Newington on research methods and methodologies (University of
+            Liverpool, 2019) and going through the interactive methods map on research methods from Sage (Sage,
+            2021).</p>
+          <p>This unit consisted of two formative activities, a lecture cast, a lecture and a seminar preparation
+            activity in addition to all the required reading. The formative activities for this unit were the summary
+            post for the collaborative discussion on ethics and the portfolio activity related to the research proposal
+            for the second assignment. The lecture cast for this unit focused on surveys and interviews in research and
+            pre- and post-testing to prove or disprove a hypothesis. During the lecture Dr Outram went over the
+            activities, we were expected to complete by the end of unit four as well as the different research and data
+            collection methods so that we could begin working on the upcoming assignment. The seminar preparation
+            activity we had to complete prior to the lecture was a peer review activity on AI research we had to compare
+            research papers that used different research methods and had to answer the following questions; are the
+            research questions and objectives in line with your thoughts on the topic, do they contribute to the
+            collective body of knowledge, was the research methodology, data collection method and analysis appropriate,
+            does each paper support its claims and conclusions with evidence and how could each study be enhanced.</p>
+          <p><strong><u>Feelings</u></strong></p>
+          <p>The inconsistencies on the learning platform caused me a great deal of confusion as the reading list
+            contained duplicate entries from a previous unit and didn&rsquo;t match up with the reading list for the
+            module. I wouldn&rsquo;t have expected to see this on a postgraduate course as it suggests a lack of care
+            and attention to detail.</p>
+          <p>I was perplexed by Dr Outram&rsquo;s contradiction when it came to referencing as she stressed the
+            importance of not using sources without a date but then used them in multiple places on the learning
+            platform.</p>
+          <p>I noticed that a lot of the references on the learning platform didn't match up with the referencing guide
+            provided by the university and some of them were incorrect (I.E they had the incorrect year). This is a
+            worrying sign as it suggests the learning platform was put together in a rush and not double-checked for
+            correctness.</p>
+          <p>I felt as if the amount of reading for this unit was excessive as it&rsquo;s not realistic to expect
+            part-time students to read so much in one week especially if they have other commitments.</p>
+          <p>I was disappointed by the participation of the other students throughout the entirety of the collaborative
+            discussion as very few people actively participated in the collaborative discussion. While this worry trend
+            is something I have noticed throughout the entirety of my postgraduate degree, I would have expected more
+            participation, especially at the beginning of a module.</p>
+          <p>Again, I didn't receive the lecture slides in advance like I am supposed to according to my reasonable
+            adjustment plan. This left me rather disappointed as what is the point of having a reasonable adjustment
+            plan when it is never followed by the lectures. The idea behind receiving the lecture slides early is to
+            allow me to be better prepared for the lectures and to save me the time I would spend re-watching the
+            lectures to make notes. Due to the heavy workload of the unit to date, this is rather inconvenient. I hope
+            this won&rsquo;t be a regular occurrence in this module as receiving the lecture slides early is extremely
+            beneficial.</p>
+          <p>Again, it seemed like Dr Outram was just reading off the slides during the lecture and the slides were very
+            wordy. I would have expected Dr Outram to add some of her own insights as I didn&rsquo;t really gain any
+            real value from attending the lecture, I could have just read the slides myself. I am concerned that if this
+            continues, the attendance in the lectures will continue to fall.</p>
+          <p>I feel as if the lectures could have been scheduled much better as 9:00 AM lectures are likely to have very
+            poor attendance due to time zone differences. Other lecturers at least made an effort to accommodate
+            international students and students with other commitments by having lectures at a reasonable time. I
+            consider this very worrying as anyone working in the country where the university is based is unlikely to be
+            able to attend the lectures due to their typical working hours.</p>
+          <p><strong><u>Evaluation</u></strong></p>
+          <p>The aspects of the unit that I feel went well were; all module goals were achieved, my ability to read
+            and understand technical documents improved as I had a lot of reading to do for this unit of the module.</p>
+          <p>While Dr Outram is good at keeping on top of the students making sure nobody falls behind, there is a lot
+            of
+            room for improvement in their presentation style as whenever you attend the lectures, all Dr Outram does is
+            read off the slides.</p>
+          <p>I was rather disappointed as I had high expectations for the module, however, after not receiving the
+            lecture
+            slides early for any lectures to date and noticing the sub-par attendance to the lectures, the sub-par
+            participation in the collaborative discussions and the high number of mistakes on the learning platform, I
+            have significantly lowered my expectations for the rest of the module.</p>
+          <p><strong><u>Analysis</u></strong></p>
+          <p>As I am planning on applying for PHD&rsquo;s learning how to do a research project is vital as a
+            significant part of any doctorate is the research proposal.</p>
+          <p><strong><u>Conclusion</u></strong></p>
+          <p>Over the course of the unit I learned about the research onion, the differences between quantitative
+            research and qualitative research, the purpose of research, the different types of research, the different
+            research strategies, the differences between secondary and primary research, the threats to reliability, the
+            different types of validity and the different Quality criteria. As I had never done a research module prior
+            to this, this was a module where I expected to learn a lot.</p>
+          <p><strong><u>Action plan</u></strong></p>
+          <p>If I was to redo this unit of the module, I would have managed my time better in the previous module and
+            planned for being ill, so I wouldn't need to manage the workload of two modules for the first week as due to
+            this I fell behind in this module and have been struggling to catch up due to the heavy work load.</p>
+          <p><strong><u>References</u></strong></p>
+          <p>Gibbs, G. (1998) Learning by Doing: A guide to teaching and learning methods. Further Education Unit.
+            Oxford Polytechnic: Oxford.</p>
+          <p>Dawson, C. (2015)&nbsp;<em>Projects in Computing and Information Systems: A Student's Guide</em>. Harlow:
+            Pearson.</p>
+          <p>British Research Methodology (BRM). (2018)&nbsp;<em>Research Design.</em></p>
+          <p>University of Liverpool Academic Skills. (2019)&nbsp;<em>Introduction to research methods and
+            methodologies.</em></p>
+          <p>QuestionPro. (2021).&nbsp;<em>What is research?</em></p>
+          <p>Sage. (2021)&nbsp;<em>Sage Research Methods: Methods Map.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Unit Navigation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <div class="unit-navigation d-flex justify-content-between">
+        <a class="btn-nav w-100 me-2" href="unit2.html">← Previous Unit</a>
+        <a class="btn-nav w-100 ms-2" href="unit4.html">Next Unit →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Research Methods and Professional Practice E-Portfolio</p>
+</footer>
+
+<!-- External JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Preloader JavaScript -->
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  });
+</script>
+
+<!-- Initialize AOS (Animate on Scroll) for scroll-based animations -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Custom JavaScript (if any, for additional functionality) -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

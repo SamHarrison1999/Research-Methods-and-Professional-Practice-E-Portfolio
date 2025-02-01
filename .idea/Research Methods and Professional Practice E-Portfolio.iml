@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="aos" level="application" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="538ab32b-5c34-48a2-a9d7-650103465ad3" />
+  </component>
+</module>

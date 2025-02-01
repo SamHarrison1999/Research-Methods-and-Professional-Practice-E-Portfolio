@@ -1,0 +1,486 @@
+<!doctype html>
+<!--suppress JSUnresolvedReference -->
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta-Information for SEO and Social Sharing -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Unit 5: Interviews, Survey Methods, and Questionnaire Design - E-Portfolio</title>
+  <meta
+    content="Detailed view of Unit 5: Interviews, Survey Methods, and Questionnaire Design."
+    name="description">
+
+  <!-- Open Graph meta-tags for Social Media Sharing -->
+  <meta content="Unit 5: Interviews, Survey Methods, and Questionnaire Design" property="og:title">
+  <meta content="website" property="og:type">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit5.html"
+    property="og:url">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit5-image.jpg"
+    property="og:image">
+  <meta content="Unit 5: Interviews, Survey Methods, and Questionnaire Design" property="og:image:alt">
+
+  <!-- External CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon and Icons -->
+  <link href="/favicon.ico" rel="icon" sizes="any">
+  <link href="/icon.svg" rel="icon" type="image/svg+xml">
+  <link href="icon.png" rel="apple-touch-icon">
+
+  <!-- Web App Manifest -->
+  <link href="site.webmanifest" rel="manifest">
+  <meta content="#fafafa" name="theme-color">
+
+  <!-- Inline CSS for layout -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Navigation Buttons */
+    .unit-navigation {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .unit-navigation a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-nav {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      display: block;
+      text-align: center;
+    }
+
+    .btn-nav:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+
+    .unit-navigation .btn-nav {
+      flex: 1; /* Ensure both buttons take up equal space */
+    }
+
+    .unit-navigation {
+      margin: 20px 0; /* Space around navigation buttons */
+    }
+
+    .me-2 {
+      margin-right: 0.5rem; /* Right margin for Previous Unit button */
+    }
+
+    .ms-2 {
+      margin-left: 0.5rem; /* Left margin for Next Unit button */
+    }
+
+    /* Updated Header Styles */
+    header {
+      background-color: transparent; /* No background */
+      padding: 1rem 0; /* Smaller padding */
+    }
+
+    header.unit-header {
+      max-width: 100%; /* Align with the content's width */
+      margin: 0 auto;
+    }
+
+
+    .unit-header h1 {
+      font-size: 2rem; /* Smaller title */
+    }
+
+    .unit-header p {
+      font-size: 1rem; /* Smaller subtitle */
+    }
+
+    /* Removes border from the card */
+    .card {
+      border: none;
+    }
+
+    /* Make the content section the same width as the title */
+    .unit-content {
+      max-width: 100%; /* Full width */
+    }
+
+    /* Preloader Styles */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #preloader .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #007bff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Research Methods and Professional Practice E-Portfolio</a>
+    <button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+            type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <!-- Dropdown for Units -->
+        <li class="nav-item dropdown">
+          <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+             id="unitsDropdown"
+             role="button">
+            Units
+          </a>
+          <ul aria-labelledby="unitsDropdown" class="dropdown-menu">
+            <li><a class="dropdown-item" href="unit1.html">Unit 1</a></li>
+            <li><a class="dropdown-item" href="unit2.html">Unit 2</a></li>
+            <li><a class="dropdown-item" href="unit3.html">Unit 3</a></li>
+            <li><a class="dropdown-item" href="unit4.html">Unit 4</a></li>
+            <li><a class="dropdown-item" href="unit5.html">Unit 5</a></li>
+            <li><a class="dropdown-item" href="unit6.html">Unit 6</a></li>
+            <li><a class="dropdown-item" href="unit7.html">Unit 7</a></li>
+            <li><a class="dropdown-item" href="unit8.html">Unit 8</a></li>
+            <li><a class="dropdown-item" href="unit9.html">Unit 9</a></li>
+            <li><a class="dropdown-item" href="unit10.html">Unit 10</a></li>
+            <li><a class="dropdown-item" href="unit11.html">Unit 11</a></li>
+            <li><a class="dropdown-item" href="unit12.html">Unit 12</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+
+  <!-- Unit Header -->
+  <header class="unit-header text-center">
+    <div class="container-fluid">
+      <!-- Main Title and Subtitle (Smaller Font) -->
+      <h1 aria-labelledby="unitTitle" class="display-4">Unit 5: Interviews, Survey Methods, and Questionnaire
+        Design</h1>
+    </div>
+  </header>
+
+  <!-- Unit Navigation -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div class="unit-navigation d-flex justify-content-between">
+          <a class="btn-nav w-100 me-2" href="unit4.html">← Previous Unit</a>
+          <a class="btn-nav w-100 ms-2" href="unit6.html">Next Unit →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Unit Content -->
+  <section class="unit-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <!-- Unit Overview -->
+          <h3>Unit Overview</h3>
+          <p>Unit 5 focused on the use of interviews, surveys, and questionnaire design in qualitative and quantitative
+            research. Then we explored pre and post testing methods.</p>
+
+          <!-- Learning Objectives -->
+          <h4>Learning Objectives</h4>
+          <ul>
+            <li>Understand the role of interviews and surveys in research and determine their relevance to your study.
+            </li>
+            <li>Differentiate between surveys and questionnaires and understand their unique purposes.</li>
+            <li>Learn how to design effective questionnaires to collect qualitative, quantitative, or mixed-method
+              data.
+            </li>
+            <li>Explore pre- and post-testing methods and their application in research.</li>
+            <li>Analyse data collected through interviews, surveys, and questionnaires effectively.</li>
+          </ul>
+
+          <!-- Artefacts Section -->
+          <h4>Artefacts</h4>
+          <p>This section includes the artefacts completed during this unit.</p>
+
+          <div class="card mb-3">
+            <!-- Reflective Activity 2 - Inappropriate Use of Surveys Case Study -->
+            <h5 id="InappropriateUseOfSurveysActivity">Inappropriate Use of Surveys Case Study Reflective Activity</h5>
+            <p>The Cambridge Analytica scandal (Confessore, 2018) is a high-profile example of how surveys can be
+              manipulated to gather personal data for alternative purposes. Cambridge Analytica accessed data from
+              approximately 87 million Facebook users through a personality quiz app even though only 270 thousand
+              people
+              took the survey as they also collected data from the participants' Facebook friends, they then used this
+              data to build psychological profiles for targeted political ads for the 2016 US presidential election.</p>
+            <p>Other high-profile examples of companies who have used surveys inappropriately are Target who in 2012
+              used survey and purchase data to predict customers' life events so they could target ads to individuals
+              (Duhigg, 2012) and TikTok who in 2020 used surveys intended to improve UX to collect data about their
+              users for targeted advertising and financial gain (Newton, 2020).</p>
+            <p>These types of exploitative surveys raise plenty of legal, social and ethical issues — for example, these
+              companies could be found to be in violation of human rights laws related to informed consent as the
+              victims weren&rsquo;t fully aware of how their data would be used, and they could be found to be in breach
+              of privacy laws as at a result they could receive a significant fine and suffer significant reputation
+              damage.</p>
+            <p><strong><u>References</u></strong></p>
+            <p>Confessore, N. (2018) &lsquo;Cambridge Analytica and Facebook: The Scandal and the Fallout So Far&rsquo;,
+              <em>The New York Times</em>, 4 April. Available at: <a href="https://www.nytimes.com/">https://www.nytimes.com/</a>
+              [Accessed: 29 November 2024].</p>
+            <p>Duhigg, C. (2012) &lsquo;How Companies Learn Your Secrets&rsquo;, <em>The New York Times Magazine</em>,
+              16 February. Available at: <a href="https://www.nytimes.com/">https://www.nytimes.com/</a> [Accessed: 29
+              November 2024].</p>
+            <p>Newton, C. (2020) &lsquo;TikTok under investigation over data collection practices&rsquo;, <em>The
+              Verge</em>, 15 July. Available at: <a href="https://www.theverge.com/">https://www.theverge.com/</a>
+              [Accessed: 29 November 2024].</p>
+            <br>
+            <h5 id="QuestionnaireWikiActivity">Questionnaires Wiki Activity</h5>
+            <p><strong><u>Introduction </u></strong></p>
+            <p>For this activity, I will analyse and critique the Census 2021 Household Questionnaire from the Office
+              for National Statistics (ONS, 2021). The six specific questions I will focus on are:</p>
+            <ol>
+              <li><em>What is your date of birth?</em></li>
+              <li><em>What is your sex?</em></li>
+              <li><em>How would you describe your ethnic group?</em></li>
+              <li><em>Do you have any long-term health conditions or disabilities?</em></li>
+              <li><em>What is your current employment status?</em></li>
+              <li><em>How many people live in your household, and what is their relationship to you?</em></li>
+            </ol>
+            <p><strong><u>Format and Structure Analysis </u></strong></p>
+            <p>Overall, the questionnaire is clear and straightforward, using categorised sections to group similar
+              questions effectively. However, its length may overwhelm some respondents, potentially affecting
+              completion rates.</p>
+            <p><strong><u>Question Analysis </u></strong></p>
+            <p>While collecting respondents' dates of birth, provides valuable demographic data, this question may cause
+              discomfort for individuals who prefer not to share their age. Additionally, the variation in date formats
+              across countries could confuse respondents whose primary nationality is not English. To address these
+              issues, I recommend requesting respondents' age range instead. This would provide the necessary data
+              without causing confusion or discomfort.</p>
+            <p>Although asking about sex is a reasonable question, the limited response options may exclude or offend
+              individuals in the LGBTQIA+ community. A lack of inclusivity can lead to feelings of marginalisation. To
+              avoid this, I suggest expanding the response options to include categories such as "Non-binary," "Prefer
+              not to say", or an open-text option to reflect modern societal diversity.</p>
+            <p>The question on ethnicity is important for collecting data on diversity. However, the response categories
+              are often broad and may not adequately represent all ethnic groups. This lack of specificity could lead to
+              confusion or frustration among respondents unsure of which category applies to them. Adding more granular
+              options or an open-text field for "Other" would enhance inclusivity and accuracy.</p>
+            <p>The question on long-term health conditions and disabilities is limited to "Yes" or "No" responses, as
+              such it is overly simplistic. It misses the opportunity to gather detailed data about the nature of
+              respondents' conditions or disabilities. A follow-up question allowing respondents to specify the type of
+              condition would provide more meaningful insights.</p>
+            <p>Whilst understanding employment status is essential for analysing labour market trends, the limited
+              response options exclude less common forms of work, such as gig economy roles or unpaid caregiving. This
+              question could be improved by offering a broader range of employment categories or an open-text
+              option.</p>
+            <p>The question about household composition requires respondents to categorise relationships into predefined
+              roles, which may not reflect modern family dynamics. Adding an "Other" option or allowing respondents to
+              specify relationships would accommodate diverse household arrangements.</p>
+            <p><strong><u>Conclusion</u></strong></p>
+            <p>While the Census questionnaire is a valuable tool for collecting demographic and household data in
+              England and Wales, several questions lack inclusivity and flexibility. Expanding response options to
+              reflect modern societal diversity, including a section for participant feedback, and incorporating
+              follow-up questions where necessary would enhance the quality and completeness of the data collected.</p>
+            <p><strong><u>References</u></strong></p>
+            <p>Office for National Statistics (ONS), 2021. <em>Census 2021: Household Questionnaire (England).</em>
+              [online] Available at: <a href="https://www.ons.gov.uk/census">https://www.ons.gov.uk/census</a> [Accessed
+              29 November 2024].</p>
+
+          </div>
+
+          <!-- Reflection Section -->
+          <h5 id="reflection">Reflection</h5>
+          <p><strong><u>Description</u></strong></p>
+          <p>This was the fifth unit of the Research Methods and Professional Practice module. The goals of this unit
+            were to understand the role of interviews and surveys in research and determine their relevance to your
+            study, to be able to differentiate between surveys and questionnaires and understand their unique purposes,
+            to learn how to design effective questionnaires to collect qualitative, quantitative, or mixed-method data,
+            to explore pre- and post-testing methods and their application in research and to be able to analyse data
+            collected through interviews, surveys, and questionnaires effectively.</p>
+          <p>For this unit we were required to read an extract from chapter two in the book &lsquo;Projects in Computing
+            and Information Systems: A Student's Guide&rsquo; (Dawson, 2015), a paper on qualitative research (Hoepfl,
+            1997), a guide on using NVivo (Allsop et al., 2022) and an article on analysing qualitative data (Learning
+            for Action, 2014). In addition to the required reading, there was a lecture cast on questionnaire
+            design.</p>
+          <p>There were two formative activities for this unit. The first formative activity was to reflect on the
+            Cambridge Analytica scandal and provide two high profile examples of inappropriate use of surveys focusing
+            on the social, legal and ethical concerns. The second formative activity was to critique a questionnaire. In
+            addition to the two formative activities, we were asked to think about the data collection tool we intend to
+            use in the module and in the dissertation module.</p>
+          <p><strong><u>Feelings</u></strong></p>
+          <p>When I was accessing the learning platform, I noticed one of the references in the lecture casts pointed to
+            a broken link, there were some minor grammatical errors on the learning platform and not all the references
+            in the reading list were correct (the references for the articles on Analysing Qualitative Data and
+            comparing Surveys and questionnaires were both listed without a date when the publication date can be found
+            in the source code). I would have expected the learning platform to be checked regularly to avoid these
+            issues.</p>
+          <p>When I was doing the required reading for this module, I felt as though it didn't seem entirely relevant as
+            we are not expected to use NVivo in this module and the other articles were rather dated.</p>
+          <p>The workload for this unit was much more manageable compared to the previous units in the module up to this
+            point, as such, it allowed me to spend more time catching up with the module whilst I continued working on
+            PHD
+            applications.</p>
+          <p><strong><u>Evaluation</u></strong></p>
+          <p>The aspects of the unit that I feel went well were; all goals were achieved, my academic writing
+            skills improved as a result of the formative activities, and the workload was a lot more manageable with my
+            other commitments.</p>
+          <p>The main area where I could have improved during this unit of the module was with my time management as I
+            spent a lot of time working on the formative activities this week, so I didn&rsquo;t have as much time as I
+            would have liked to spend catching up with the e-portfolio.</p>
+          <p>The only other negative I really had for this unit of the module was with the inconsistencies on the
+            learning platform. With the referencing format changing in 2025 but still accepting the current format for
+            the next year, this will most likely cause a great deal of confusion as there are multiple ways of
+            referencing. In addition, the referencing on the learning platform not matching up with the current
+            guidelines provided by the university raises even more potential questions on how to reference
+            correctly.</p>
+          <p><strong><u>Analysis</u></strong></p>
+          <p>Reflecting on this unit, I recognise the overlap between the unit goals and my academic and
+            professional aspirations, as I begin preparation for PHD research. This unit provided insights into the
+            differences between surveys and questionnaires and their respective purposes, along with guidance on
+            designing effective data collection tools. The introduction of pre- and post-testing methods was especially
+            beneficial, offering strategies to enhance the validity and reliability of research data. These skills are
+            directly relevant to conducting primary research, which is a significant component of my future academic
+            endeavours.</p>
+          <p>Despite these strengths, the learning experience was hindered by inconsistencies on the learning platform.
+            Broken links, outdated references, and discrepancies in referencing formats required additional time and
+            effort to address, which could have been spent on more meaningful engagement with the material. On a
+            positive note, the workload for this unit was more manageable than in previous weeks, allowing me to focus
+            on other responsibilities, including my PHD applications. However, my time management could have been
+            better, as I spent a significant amount of time on the formative activities, leaving not enough time to
+            update my e-portfolio and fully consolidate my learning.</p>
+          <p><strong><u>Conclusion</u></strong></p>
+          <p>Overall, the unit successfully achieved its goals and provided a solid foundation for conducting and
+            evaluating research. It reinforced my academic writing and critical thinking skills, which are crucial for
+            my PHD journey. However, my experience highlighted areas for improvement, such as the need for consistent
+            and accurate learning materials and better personal time management. Despite these challenges, I feel more
+            confident in my ability to design and critique research tools, which will serve me well in future research
+            projects. This unit has been instrumental in bridging the gap between my current capabilities and the
+            demands of a PHD.</p>
+          <p><strong><u>Action Plan</u></strong></p>
+          <p>Moving forward, I plan to focus on improving my time management skills to better balance module
+            requirements with other responsibilities. To achieve this, I will allocate specific time slots for different
+            tasks using a digital planner to visualise deadlines and prioritise effectively.</p>
+          <p>In terms of skill development, I aim to practice designing and critiquing research tools, such as surveys
+            and questionnaires, beyond the scope of this module. Even though NVivo was not required for this unit, I
+            plan to explore it further as familiarity with qualitative analysis software will be invaluable for my PHD
+            research and dissertation. To enhance my academic writing, I will continue engaging in formative activities
+            and seek feedback from peers or use tools like Grammarly to refine my work further. Lastly, I will integrate
+            the skills learned in this unit into my ongoing PhD applications, emphasising my ability to conduct ethical
+            and effective research, while also exploring advanced research techniques to gain a competitive edge.</p>
+          <p><strong><u>References</u></strong></p>
+          <p>Gibbs, G. (1998) Learning by Doing: A guide to teaching and learning methods. Further Education Unit.
+            Oxford Polytechnic: Oxford.</p>
+          <p>Dawson, C. (2015)&nbsp;<em>Projects in Computing and Information Systems: A Student's Guide</em>. Harlow:
+            Pearson.</p>
+          <p>Hoepfl, M. C. (1997) Choosing Qualitative Research: A Primer for Technology Education
+            Researchers.&nbsp;<em>Journal of Technology Education</em>&nbsp;9(1): 47-.</p>
+          <p>Allsop, D. B. et al. (2022) Qualitative Methods with Nvivo Software: A Practical Guide for Analysing
+            Qualitative Data.&nbsp;<em>Psych</em>&nbsp;4(2): 142&ndash;159.</p>
+          <p>Learning for Action. (2014)&nbsp;<em>Analyzing Qualitative Data</em>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Unit Navigation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <div class="unit-navigation d-flex justify-content-between">
+        <a class="btn-nav w-100 me-2" href="unit4.html">← Previous Unit</a>
+        <a class="btn-nav w-100 ms-2" href="unit6.html">Next Unit →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Research Methods and Professional Practice E-Portfolio</p>
+</footer>
+
+<!-- External JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Preloader JavaScript -->
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  });
+</script>
+
+<!-- Initialize AOS (Animate on Scroll) for scroll-based animations -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Custom JavaScript (if any, for additional functionality) -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

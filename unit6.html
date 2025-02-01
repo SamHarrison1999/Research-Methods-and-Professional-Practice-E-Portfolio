@@ -1,0 +1,495 @@
+<!doctype html>
+<!--suppress JSUnresolvedReference -->
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta-Information for SEO and Social Sharing -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Unit 6: Quantitative Methods - Descriptive and Inferential Statistics - E-Portfolio</title>
+  <meta
+    content="Detailed view of Unit 6: Quantitative Methods - Descriptive and Inferential Statistics."
+    name="description">
+
+  <!-- Open Graph meta-tags for Social Media Sharing -->
+  <meta content="Unit 6: Quantitative Methods - Descriptive and Inferential Statistics" property="og:title">
+  <meta content="website" property="og:type">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit6.html"
+    property="og:url">
+  <meta
+    content="https://samharrison1999.github.io/Research%20Methods%20and%20Professional%20Practises%20E-Portfolio/unit6-image.jpg"
+    property="og:image">
+  <meta content="Unit 6: Quantitative Methods - Descriptive and Inferential Statistics" property="og:image:alt">
+
+  <!-- External CSS Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Favicon and Icons -->
+  <link href="/favicon.ico" rel="icon" sizes="any">
+  <link href="/icon.svg" rel="icon" type="image/svg+xml">
+  <link href="icon.png" rel="apple-touch-icon">
+
+  <!-- Web App Manifest -->
+  <link href="site.webmanifest" rel="manifest">
+  <meta content="#fafafa" name="theme-color">
+
+  <!-- Inline CSS for layout -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Navigation Buttons */
+    .unit-navigation {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .unit-navigation a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .btn-nav {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      display: block;
+      text-align: center;
+    }
+
+    .btn-nav:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+
+    .unit-navigation .btn-nav {
+      flex: 1; /* Ensure both buttons take up equal space */
+    }
+
+    .unit-navigation {
+      margin: 20px 0; /* Space around navigation buttons */
+    }
+
+    .me-2 {
+      margin-right: 0.5rem; /* Right margin for Previous Unit button */
+    }
+
+    .ms-2 {
+      margin-left: 0.5rem; /* Left margin for Next Unit button */
+    }
+
+    /* Updated Header Styles */
+    header {
+      background-color: transparent; /* No background */
+      padding: 1rem 0; /* Smaller padding */
+    }
+
+    header.unit-header {
+      max-width: 100%; /* Align with the content's width */
+      margin: 0 auto;
+    }
+
+
+    .unit-header h1 {
+      font-size: 2rem; /* Smaller title */
+    }
+
+    .unit-header p {
+      font-size: 1rem; /* Smaller subtitle */
+    }
+
+    /* Added gap between embedded PDFs and removed borders */
+    .pdf-object {
+      margin-bottom: 20px; /* Creates a gap between the PDFs */
+      border: none; /* Removes the border around embedded PDFs */
+      width: 100%; /* Ensures PDF takes the full width of the container */
+      height: 800px; /* Set fixed height for the PDFs */
+    }
+
+    /* Removes border from the card */
+    .card {
+      border: none;
+    }
+
+    /* Make the content section the same width as the title */
+    .unit-content {
+      max-width: 100%; /* Full width */
+    }
+
+    /* Preloader Styles */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #preloader .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #007bff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Research Methods and Professional Practice E-Portfolio</a>
+    <button aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+            type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <!-- Dropdown for Units -->
+        <li class="nav-item dropdown">
+          <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+             id="unitsDropdown"
+             role="button">
+            Units
+          </a>
+          <ul aria-labelledby="unitsDropdown" class="dropdown-menu">
+            <li><a class="dropdown-item" href="unit1.html">Unit 1</a></li>
+            <li><a class="dropdown-item" href="unit2.html">Unit 2</a></li>
+            <li><a class="dropdown-item" href="unit3.html">Unit 3</a></li>
+            <li><a class="dropdown-item" href="unit4.html">Unit 4</a></li>
+            <li><a class="dropdown-item" href="unit5.html">Unit 5</a></li>
+            <li><a class="dropdown-item" href="unit6.html">Unit 6</a></li>
+            <li><a class="dropdown-item" href="unit7.html">Unit 7</a></li>
+            <li><a class="dropdown-item" href="unit8.html">Unit 8</a></li>
+            <li><a class="dropdown-item" href="unit9.html">Unit 9</a></li>
+            <li><a class="dropdown-item" href="unit10.html">Unit 10</a></li>
+            <li><a class="dropdown-item" href="unit11.html">Unit 11</a></li>
+            <li><a class="dropdown-item" href="unit12.html">Unit 12</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+
+  <!-- Unit Header -->
+  <header class="unit-header text-center">
+    <div class="container-fluid">
+      <!-- Main Title and Subtitle (Smaller Font) -->
+      <h1 aria-labelledby="unitTitle" class="display-4">Unit 6: Quantitative Methods—Descriptive and Inferential
+        Statistics</h1>
+    </div>
+  </header>
+
+  <!-- Unit Navigation -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <div class="unit-navigation d-flex justify-content-between">
+          <a class="btn-nav w-100 me-2" href="unit5.html">← Previous Unit</a>
+          <a class="btn-nav w-100 ms-2" href="unit7.html">Next Unit →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Unit Content -->
+  <section class="unit-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <!-- Unit Overview -->
+          <h3>Unit Overview</h3>
+          <p>Unit 6 introduced us to quantitative methods in research, focusing on descriptive statistics and their role
+            in summarising numerical data. We then learnt about different levels of measurement, measures of location
+            and spread, and how these concepts aid in understanding data variability and patterns.</p>
+
+          <!-- Learning Objectives -->
+          <h4>Learning Objectives</h4>
+          <ul>
+            <li>Understand the fundamentals of quantitative methods and their application in research.</li>
+            <li>Identify and differentiate between different levels of measurement for quantitative data.</li>
+            <li>Apply descriptive statistics to summarise and analyse numerical data.</li>
+            <li>Calculate and interpret measures of location and spread.</li>
+          </ul>
+
+          <!-- Artefacts Section -->
+          <h4>Artefacts</h4>
+
+          <div class="card mb-3">
+            <p>For this unit, there weren't any artefacts. Instead, we were tasked with working on the e-portfolio
+              assignment making sure any formative activities weren't outstanding.</p>
+            <p>There was a formative activity to work begin working on the hypothesis testing and descriptive statistics
+              exercises due in unit 7 that can be found below.</p>
+            <h4>Summary Measures Worksheet</h4>
+            <h5>Example 6.1</h5>
+            <object aria-describedby="summaryMeasuresWorksheetExample6.1"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQQWkNAHClj0SIYHj19ClnMeAWfl_4QGvAZIuUHyXfYgt4A"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for Exercise 6.1"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQQWkNAHClj0SIYHj19ClnMeAWfl_4QGvAZIuUHyXfYgt4A"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h5>Example 6.2</h5>
+            <object aria-describedby="summaryMeasuresWorksheetExample6.2"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQT7Gkdx3154R5BhU4p3ChyoAb1oUD1by-__KImwACtf2to"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for Exercise 6.2"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQT7Gkdx3154R5BhU4p3ChyoAb1oUD1by-__KImwACtf2to"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h5>Example 6.3</h5>
+            <object aria-describedby="summaryMeasuresWorksheetExample6.3"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQQvW2N4ksQiSr6DkWct1y3rAbpgLpuLdOI1PTl_oxN-MLE"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for Exercise 6.3"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQQvW2N4ksQiSr6DkWct1y3rAbpgLpuLdOI1PTl_oxN-MLE"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h4>Hypothesis Testing Worksheet</h4>
+            <h5>Example 7.1</h5>
+            <object aria-describedby="hypothesisTestingWorksheetExample7.1"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQQECPHiO6YARqiQbG98zSukAe-35o-jqgsWvcP5ZuZXdiI"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for Exercise 7.1"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQQECPHiO6YARqiQbG98zSukAe-35o-jqgsWvcP5ZuZXdiI"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h3>The INDEPENDENT Samples T Test spreadsheet</h3>
+            <object aria-describedby="hypothesisTestingWorksheetIndependentSamplesTTest"
+                    class="pdf-object"
+                    data="https://1drv.ms/x/c/e08399976f28f5bf/IQRHzVZxCs2mTpEZXSRiAKtSAaTOtICMoHf_9y70mmb7aok"
+                    type="application/pdf">
+              <p>Your browser does not support embedded PDFs. You can <a
+                aria-label="Download the spreadsheet for 7.6B"
+                href="https://1drv.ms/x/c/e08399976f28f5bf/IQRHzVZxCs2mTpEZXSRiAKtSAaTOtICMoHf_9y70mmb7aok"
+                target="_blank">download the spreadsheet</a>.</p>
+            </object>
+            <h5>Example 7.2</h5>
+            <p>Example 7.2 asked us to use a spreadsheet file that wasn't provided, so I was unable to complete the
+              exercise, so I provided a conceptual approach below.</p>
+            <p><strong>1. Hypotheses</strong></p>
+            <p>The goal is to test whether the population mean income for men exceeds that of women. This involves a
+              one-tailed, two-sample t-test.</p>
+            <ul>
+              <li><strong>Null Hypothesis (𝐾<sub>0</sub>):</strong> The mean income for men (μ<sub>M</sub>) is less
+                than or equal to the mean income for women (μ<sub>F</sub>)
+              </li>
+              <li><strong>Alternative Hypothesis (𝐾<sub>a</sub>):</strong> The mean income for men (μ<sub>M</sub>) is
+                greater than the mean income for women (μ<sub>F</sub>)
+              </li>
+            </ul>
+
+            <p><strong>2. Test Statistic</strong></p>
+            <p>The test statistic for a two-sample t-test is calculated as:</p>
+            <pre>
+            t = (X̄<sub>M</sub> - X̄<sub>F</sub>) / sqrt((s<sup>2</sup><sub>M</sub> / n<sub>M</sub>) + (s<sup>2</sup><sub>F</sub> / n<sub>F</sub>))
+            </pre>
+            <ul>
+              <li><strong>X̄<sub>M</sub>, X̄<sub>F</sub>:</strong> Mean income of males and females, respectively.</li>
+              <li><strong>s<sup>2</sup><sub>M</sub>, s<sup>2</sup><sub>F</sub>:</strong> Variances of male and female
+                income samples.
+              </li>
+              <li><strong>n<sub>M</sub>, n<sub>F</sub>:</strong> Sample sizes of males and females, respectively.</li>
+            </ul>
+
+            <p><strong>3. Assumptions for Validity</strong></p>
+            <p>The validity of the test relies on these assumptions:</p>
+            <ul>
+              <li><strong>Independence:</strong> Observations within and between the groups are independent.</li>
+              <li><strong>Normality:</strong> The income data for both groups is approximately normally distributed.
+              </li>
+              <li><strong>Homogeneity of Variance:</strong> The variance of income is similar for men and women.
+              </li>
+            </ul>
+
+            <p><strong>4. Steps for Validation</strong></p>
+            <ul>
+              <li><strong>Independence:</strong> Check the design of the data collection to ensure no dependency exists
+                between observations.
+              </li>
+              <li><strong>Normality:</strong> Use graphical methods or statistical tests to assess the distribution of
+                income.
+              </li>
+              <li><strong>Homogeneity of Variance:</strong> Use Levene's test or Bartlett's test to verify whether
+                variances are equal. If there are not, use a t-test assuming unequal variances.
+              </li>
+            </ul>
+
+            <p><strong>5. Interpretation</strong></p>
+            <p>If the calculated p-value is less than the significance level, reject the null hypothesis and conclude
+              that the population mean income for men is significantly higher than that for women. Otherwise, fail
+              to reject the null hypothesis.</p>
+
+            <p><strong>6. Reporting Findings</strong></p>
+            <ul>
+              <li>Report the test statistic (t) and p-value.</li>
+              <li>Include confidence intervals for the difference in means.</li>
+              <li>Discuss practical significance, if applicable.</li>
+            </ul>
+          </div>
+
+          <!-- Reflection Section -->
+          <h5 id="reflection">Reflection</h5>
+          <p><strong><u>Description</u></strong></p>
+          <p>This unit was the sixth unit of the Research Methods and Professional Practice module. This unit of the
+            module focused on quantitative methods. The goals of this unit were to understand and apply descriptive
+            statistics in data analysis, to identify and classify different levels of measurement for variables and to
+            learn how to calculate and interpret measures of location and spread in numerical data.</p>
+          <p>During this unit we were required to read chapter 2 &amp; 3 in the book Basic Business Statistics: Concepts
+            and Applications (Berenson et al., 2019) and had to prepare for next week's seminar by attempting the
+            Seminar preparation activity in unit 7.</p>
+          <p><strong><u>Feelings</u></strong></p>
+          <p>The reading for this unit didn't match what it said on the learning platform and didn&rsquo;t seem relevant
+            as the learning platform said that the reading this week will give you more information on designing a
+            questionnaire however it instead focused on different ways of visualising and analysing data rather than
+            designing a questionnaire and the context of the examples weren&rsquo;t relevant to computer science.</p>
+          <p>The worksheets for the seminar preparation activity on Summary Measures and Hypothesis Testing were both
+            significantly out of date as some files were either missing or named incorrectly, which caused me a great
+            deal
+            of confusion.</p>
+          <p>I injured my wrist this before starting this week&rsquo;s activities which made me fall behind again as I
+            was unable to type which is not ideal due to the ever-increasing workload of this module.</p>
+          <p><strong><u>Evaluation</u></strong></p>
+          <p>The unit provided an insightful exploration of quantitative methods, focusing on descriptive statistics,
+            measures of location, and measures of spread. These concepts were useful for understanding how to analyse
+            and summarise data effectively. However, the discrepancies between the recommended reading and the content
+            on the learning platform were disappointing. The promised focus on questionnaire design was instead replaced
+            with unrelated examples, which lacked relevance to computer science. This mismatch significantly hampered my
+            learning experience. Additionally, the outdated seminar preparation worksheets added confusion, as they
+            lacked clear organisation and included missing or mislabelled files.</p>
+          <p>Despite these challenges, the foundational knowledge of quantitative methods gained during this unit has
+            proven to be valuable. It strengthened my ability to classify data, calculate descriptive measures, and
+            interpret their implications, which are crucial for statistical analysis in research.</p>
+          <p><strong><u>Analysis</u></strong></p>
+          <p>The inconsistency between the assigned readings and the learning platform highlighted a gap in the course's
+            structure and delivery. The focus on data visualisation and statistical analysis in the readings was a
+            missed opportunity to reinforce questionnaire design, which was stated as the week's focus. This
+            misalignment made it difficult to directly connect the material to practical applications in computer
+            science, where contextually relevant examples would have been more impactful. Additionally, the outdated
+            seminar preparation worksheets presented logistical challenges, detracting from the overall learning
+            experience. Despite these issues, the unit successfully introduced foundational statistical concepts,
+            enabling a better understanding of data summarisation techniques.</p>
+          <p><strong><u>Conclusion</u></strong></p>
+          <p>While the unit succeeded in covering the fundamentals of quantitative methods, it fell short in aligning
+            supplementary resources and activities with the stated goals. Ensuring that all course materials are
+            updated, well-organised, and relevant to the module's goals would significantly improve the learning
+            experience. Greater effort is necessary to tailor examples and activities to the field of computer science,
+            enhancing the module's overall relevance and effectiveness.</p>
+          <p><strong><u>Action plan</u></strong></p>
+          <p>Use external resources, such as online tutorials or textbooks, to fill gaps in understanding and
+            reinforce concepts like questionnaire design and data visualisation.</p>
+          <p><strong><u>References</u></strong></p>
+          <p>Gibbs, G. (1998) Learning by Doing: A guide to teaching and learning methods. Further Education Unit.
+            Oxford Polytechnic: Oxford.</p>
+          <p>Berenson, L.,&nbsp;Levine, D.,&nbsp;&amp; Szabat, K.&nbsp;(2019)&nbsp;<em>Basic Business Statistics:
+            Concepts and Applications.</em>&nbsp;14th Ed.&nbsp;Pearson.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Unit Navigation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <div class="unit-navigation d-flex justify-content-between">
+        <a class="btn-nav w-100 me-2" href="unit5.html">← Previous Unit</a>
+        <a class="btn-nav w-100 ms-2" href="unit7.html">Next Unit →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Research Methods and Professional Practice E-Portfolio</p>
+</footer>
+
+<!-- External JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Preloader JavaScript -->
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.style.display = 'none';
+  });
+</script>
+
+<!-- Initialize AOS (Animate on Scroll) for scroll-based animations -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Custom JavaScript (if any, for additional functionality) -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
